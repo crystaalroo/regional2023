@@ -1,22 +1,30 @@
-import Box from "@mui/material/Box";
+import Box from '@mui/material/Box'
 
-export default function TopBanner() {
-    return <Box sx={{
-        height: { md: '180px', xs: 'auto' },
+const TopBanner: React.FC = () => {
+  return (
+    <Box
+      sx={{
+        maxHeight: { md: '180px', xs: 'auto' },
         width: '100%',
         textAlign: 'center',
         background: 'white',
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-    }}>
-        <Box
-            component='img'
-            alt="Top Banner"
-            src="assets/top_banner.png"
-            sx={{
-                maxHeight: '100%',
-                maxWidth: '100%'
-            }} />
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      <Box
+        component="img"
+        alt="Top Banner"
+        src="assets/top_banner.png"
+        sx={{
+          height: '100%',
+          maxHeight: '180px',
+          maxWidth: '100%'
+        }}
+      />
     </Box>
+  )
 }
+
+export default TopBanner

@@ -1,4 +1,4 @@
-import { createTheme, ThemeOptions } from "@mui/material/styles";
+import { createTheme, ThemeOptions } from '@mui/material/styles'
 
 const themeOptions: ThemeOptions = {
   palette: {
@@ -7,55 +7,55 @@ const themeOptions: ThemeOptions = {
       contrastText: '#FFFFFF'
     },
     secondary: {
-      main: '#0D1B2A',
+      main: '#0D1B2A'
     },
     background: {
       default: '#1b263b',
-      paper: '#1b263b',
+      paper: '#1b263b'
     },
     text: {
       primary: '#BBBBBB',
       secondary: '#BBBBBB',
-      disabled: '#BBBBBB',
+      disabled: '#BBBBBB'
     },
-    divider: '#ffffff',
+    divider: '#ffffff'
   },
   typography: {
     h1: {
-      fontFamily: 'Changa One',
+      fontFamily: 'Changa One'
     },
     h2: {
-      fontFamily: 'Changa One',
+      fontFamily: 'Changa One'
     },
     h3: {
-      fontFamily: 'Changa One',
+      fontFamily: 'Changa One'
     },
     h4: {
-      fontFamily: 'Changa One',
+      fontFamily: 'Changa One'
     },
     h5: {
-      fontFamily: 'Changa One',
+      fontFamily: 'Changa One'
     },
     h6: {
-      fontFamily: 'Changa One',
+      fontFamily: 'Changa One'
     },
     body1: {
-      fontFamily: 'Chivo',
+      fontFamily: 'Chivo'
     },
     body2: {
-      fontFamily: 'Chivo',
+      fontFamily: 'Chivo'
     },
     button: {
-      fontFamily: 'Noto Sans',
+      fontFamily: 'Noto Sans'
     },
     caption: {
-      fontFamily: 'Noto Sans',
+      fontFamily: 'Noto Sans'
     },
     overline: {
-      fontFamily: 'Chivo',
+      fontFamily: 'Chivo'
     },
-    fontFamily: 'Chivo',
-  },
-};
+    fontFamily: 'Chivo'
+  }
+}
 
-export const theme = createTheme(themeOptions);
+export const theme = createTheme(themeOptions)
