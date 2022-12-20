@@ -28,7 +28,7 @@ export default function Footer() {
                         objectFit: 'cover',
                         padding: { sm: '0 0 0 50px', xs: '25px 0' },
                     }}
-                    src="/assets/icpcmx.png"
+                    src="/assets/mexicobn.png"
                     alt="icpcmx"
                 />
                 <Box

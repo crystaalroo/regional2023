@@ -1,0 +1,19 @@
+import Box from '@mui/material/Box';
+import { NextPage } from 'next';
+import NavBar from '../components/navbar';
+import Footer from '../components/footer';
+import TopBanner from '../components/TopBanner';
+
+
+// ********************************************************************************
+const Participants: NextPage = () => {
+    return (
+        <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
+            <TopBanner />
+            <NavBar />
+            <Footer />
+        </Box>
+    )
+}
+
+export default Participants

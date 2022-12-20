@@ -15,7 +15,7 @@ export default function TopBanner() {
             alt="Top Banner"
             src="assets/top_banner.png"
             sx={{
-                maxHeight: '70%',
+                maxHeight: '100%',
                 maxWidth: '100%'
             }} />
     </Box>

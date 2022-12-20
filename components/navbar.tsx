@@ -40,144 +40,152 @@ function NavBar() {
         <Toolbar
           disableGutters
           sx={{
+            width: '100%',
+            padding: '0 50px',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Box sx={{
             width: "100%",
             maxWidth: "1280px",
             display: "flex",
-          }}
-        >
-          <Box
-            sx={{
-              width: "50%",
-              top: 0,
-              zIndex: 2,
-              position: "absolute",
-              display: { xs: "none", md: "flex" },
-              paddingLeft: "50px",
-            }}
-          >
-            <Card
+          }}>
+            <Box
               sx={{
-                width: "180px",
-                height: "240px",
-                border: "2px",
-                borderColor: "white",
-                borderLeftStyle: "solid",
-                borderRightStyle: "solid",
-                borderBottomStyle: "solid",
+                width: "50%",
+                top: 0,
+                zIndex: 2,
+                position: "absolute",
+                display: { xs: "none", md: "flex" },
               }}
             >
-              <CardContent
+              <Card
                 sx={{
-                  paddingTop: "12px",
-                  paddingBottom: "8px",
-                }}
-              >
-                <Typography
-                  fontSize={"19px"}
-                  gutterBottom
-                  variant="body1"
-                  component="div"
-                  align="left"
-                  color={"white"}
-                >
-                  REGIONAL ICPC MEXICO 2022
-                </Typography>
-              </CardContent>
-              <Box
-                sx={{
-                  padding: 0,
-                  height: "167px",
                   width: "180px",
+                  height: "240px",
+                  border: "2px",
+                  borderColor: "white",
+                  borderLeftStyle: "solid",
+                  borderRightStyle: "solid",
+                  borderBottomStyle: "solid",
+                  bgcolor: 'secondary.main',
                 }}
               >
-                <Box
+                <CardContent
                   sx={{
-                    backgroundColor: "white",
-                    height: "140px",
-                    width: "140px",
-                    margin: "auto",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
+                    paddingTop: "12px",
+                    paddingBottom: "8px",
                   }}
                 >
-                  <CardMedia
-                    component="img"
-                    image="/assets/icpcmx.png"
-                    alt="icpcmx"
+                  <Typography
+                    fontSize={"19px"}
+                    gutterBottom
+                    variant="body1"
+                    component="div"
+                    align="left"
+                    color={"white"}
+                  >
+                    REGIONAL ICPC MEXICO 2022
+                  </Typography>
+                </CardContent>
+                <Box
+                  sx={{
+                    padding: 0,
+                    height: "167px",
+                    width: "180px",
+                  }}
+                >
+                  <Box
                     sx={{
-                      width: "100%",
+                      backgroundColor: "white",
+                      height: "140px",
+                      width: "140px",
+                      margin: "auto",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
                     }}
-                  />
+                  >
+                    <CardMedia
+                      component="img"
+                      image="/assets/icpcmx.png"
+                      alt="icpcmx"
+                      sx={{
+                        width: "100%",
+                      }}
+                    />
+                  </Box>
                 </Box>
-              </Box>
-            </Card>
-          </Box>
-          <Box
-            sx={{
-              flexDirection: "row-reverse",
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              </Card>
+            </Box>
+            <Box
               sx={{
-                display: { xs: "block", md: "none" },
+                flexDirection: "row-reverse",
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
               }}
             >
-              {revPages.map((page) => (
-                <MenuItem
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {revPages.map((page) => (
+                  <MenuItem
+                    key={page}
+                    onClick={handleCloseNavMenu}
+                  >
+                    <Typography textAlign="center">
+                      {page}
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+            <Box
+              sx={{
+                width: "50%",
+                flexDirection: "row-reverse",
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+              }}
+            >
+              {pages.map((page) => (
+                <Button
                   key={page}
                   onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                  href="/participants"
                 >
-                  <Typography textAlign="center">
-                    {page}
-                  </Typography>
-                </MenuItem>
+                  {page}
+                </Button>
               ))}
-            </Menu>
-          </Box>
-          <Box
-            sx={{
-              width: "50%",
-              flexDirection: "row-reverse",
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
-              paddingRight: "50px",
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
