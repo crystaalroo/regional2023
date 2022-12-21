@@ -18,14 +18,14 @@ const Host: React.FC = () => {
               display: 'block'
             }}
           >
-            Organizadores
+            HOST Y ORGANIZADORES
           </Typography>
         </Grid>
         <Grid item xs={6}>
           <Box
             sx={{
               width: '100%',
-              height: '200pt',
+              height: '150pt',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -34,7 +34,7 @@ const Host: React.FC = () => {
             <Box
               component="img"
               sx={{
-                width: '200pt',
+                width: '180pt',
                 objectFit: 'cover',
                 display: 'flex'
               }}
@@ -47,7 +47,7 @@ const Host: React.FC = () => {
           <Box
             sx={{
               width: '100%',
-              height: '200pt',
+              height: '150pt',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -56,7 +56,7 @@ const Host: React.FC = () => {
             <Box
               component="img"
               sx={{
-                width: '200pt',
+                width: '150pt',
                 objectFit: 'cover',
                 display: 'flex'
               }}
