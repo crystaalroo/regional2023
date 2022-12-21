@@ -13,8 +13,26 @@ import {
   Typography
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
+import Link from 'next/link'
 
-const pages = ['Contacto', 'Host', 'Participantes', 'Main();']
+const pages = [
+  {
+    name: 'Contacto',
+    link: '/contact'
+  },
+  {
+    name: 'Host',
+    link: '/host'
+  },
+  {
+    name: 'Participantes',
+    link: '/participants'
+  },
+  {
+    name: 'Main()',
+    link: '/'
+  }
+]
 const revPages = pages.map(x => x).reverse()
 
 const NavBar: React.FC = () => {
@@ -73,64 +91,66 @@ const NavBar: React.FC = () => {
                 display: { xs: 'none', md: 'flex' }
               }}
             >
-              <Card
-                sx={{
-                  width: '180px',
-                  height: '240px',
-                  border: '2px',
-                  borderColor: 'white',
-                  borderLeftStyle: 'solid',
-                  borderRightStyle: 'solid',
-                  borderBottomStyle: 'solid',
-                  bgcolor: 'secondary.main'
-                }}
-              >
-                <CardContent
+              <Link key={'card'} href={'/'}>
+                <Card
                   sx={{
-                    paddingTop: '12px',
-                    paddingBottom: '8px'
+                    width: '180px',
+                    height: '240px',
+                    border: '2px',
+                    borderColor: 'white',
+                    borderLeftStyle: 'solid',
+                    borderRightStyle: 'solid',
+                    borderBottomStyle: 'solid',
+                    bgcolor: 'secondary.main'
                   }}
                 >
-                  <Typography
-                    fontSize={'19px'}
-                    gutterBottom
-                    variant="body1"
-                    component="div"
-                    align="left"
-                    color={'white'}
-                  >
-                    REGIONAL ICPC MEXICO 2022
-                  </Typography>
-                </CardContent>
-                <Box
-                  sx={{
-                    padding: 0,
-                    height: '167px',
-                    width: '180px'
-                  }}
-                >
-                  <Box
+                  <CardContent
                     sx={{
-                      backgroundColor: 'white',
-                      height: '140px',
-                      width: '140px',
-                      margin: 'auto',
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center'
+                      paddingTop: '12px',
+                      paddingBottom: '8px'
                     }}
                   >
-                    <CardMedia
-                      component="img"
-                      image="/assets/icpcmx.png"
-                      alt="icpcmx"
+                    <Typography
+                      fontSize={'19px'}
+                      gutterBottom
+                      variant="body1"
+                      component="div"
+                      align="left"
+                      color={'white'}
+                    >
+                      REGIONAL ICPC MEXICO 2022
+                    </Typography>
+                  </CardContent>
+                  <Box
+                    sx={{
+                      padding: 0,
+                      height: '167px',
+                      width: '180px'
+                    }}
+                  >
+                    <Box
                       sx={{
-                        width: '100%'
+                        backgroundColor: 'white',
+                        height: '140px',
+                        width: '140px',
+                        margin: 'auto',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
                       }}
-                    />
+                    >
+                      <CardMedia
+                        component="img"
+                        image="/assets/icpcmx.png"
+                        alt="icpcmx"
+                        sx={{
+                          width: '100%'
+                        }}
+                      />
+                    </Box>
                   </Box>
-                </Box>
-              </Card>
+                </Card>
+              </Link>
             </Box>
             <Box
               sx={{
@@ -194,9 +214,11 @@ const NavBar: React.FC = () => {
                 }}
               >
                 {revPages.map(page => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
+                  <Link key={page.name} href={page.link}>
+                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </MenuItem>
+                  </Link>
                 ))}
               </Menu>
             </Box>
@@ -209,12 +231,12 @@ const NavBar: React.FC = () => {
             >
               {pages.map(page => (
                 <Button
-                  key={page}
+                  key={page.name}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
-                  href="/participants"
+                  href={page.link}
                 >
-                  {page}
+                  {page.name}
                 </Button>
               ))}
             </Box>
