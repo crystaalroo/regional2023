@@ -1,10 +1,8 @@
 import * as React from 'react'
 import { useTheme } from '@mui/material/styles'
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft'
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight'
 import SwipeableViews from 'react-swipeable-views'
 import { autoPlay } from 'react-swipeable-views-utils'
-import { Box, MobileStepper, Button } from '@mui/material'
+import { Box } from '@mui/material'
 import CarouselCard from './CarouselCard'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews)
