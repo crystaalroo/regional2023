@@ -26,7 +26,7 @@ const CarouselCard: React.FC<Props> = ({ imgPath, label }) => {
       />
       <Typography
         gutterBottom
-        variant="h3"
+        variant="h1"
         component="div"
         align="left"
         color={'white'}
@@ -37,27 +37,8 @@ const CarouselCard: React.FC<Props> = ({ imgPath, label }) => {
           borderColor: 'divider',
           borderWidth: '5px',
           margin: 'auto 20px 20px 20px',
-          background: 'rgb(0, 0, 0, 0.4)',
-          display: { xs: 'none', sm: 'block' }
-        }}
-      >
-        {label}
-      </Typography>
-      <Typography
-        gutterBottom
-        variant="h5"
-        component="div"
-        align="left"
-        color={'white'}
-        sx={{
-          position: 'absolute',
-          bottom: 0,
-          borderStyle: 'solid',
-          borderColor: 'divider',
-          borderWidth: '5px',
-          margin: 'auto 20px 20px 20px',
-          background: 'rgb(0, 0, 0, 0.4)',
-          display: { xs: 'block', sm: 'none' }
+          padding: '10px',
+          background: 'rgb(128, 128, 128, 0.5)'
         }}
       >
         {label}
