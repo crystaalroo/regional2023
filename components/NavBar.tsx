@@ -42,8 +42,8 @@ const NavBar: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          border: '2px',
-          borderColor: 'white',
+          borderWidth: '2px',
+          borderColor: 'divider',
           borderBottomStyle: 'solid'
         }}
       >
@@ -77,8 +77,8 @@ const NavBar: React.FC = () => {
                 sx={{
                   width: '180px',
                   height: '240px',
-                  border: '2px',
-                  borderColor: 'white',
+                  borderWidth: '2px',
+                  borderColor: 'divider',
                   borderLeftStyle: 'solid',
                   borderRightStyle: 'solid',
                   borderBottomStyle: 'solid',

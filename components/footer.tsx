@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
       sx={{
         height: { sm: '200px', xs: 'auto' },
         alignItems: 'center',
-        border: '2px',
-        borderColor: 'white',
+        borderWidth: '2px',
+        borderColor: 'divider',
         borderTopStyle: 'solid',
         backgroundColor: 'secondary.main'
       }}
