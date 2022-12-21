@@ -34,8 +34,8 @@ const CarouselCard: React.FC<Props> = ({ imgPath, label }) => {
           position: 'absolute',
           bottom: 0,
           borderStyle: 'solid',
-          borderColor: 'white',
-          border: 5,
+          borderColor: 'divider',
+          borderWidth: '5px',
           margin: 'auto 20px 20px 20px',
           background: 'rgb(0, 0, 0, 0.4)',
           display: { xs: 'none', sm: 'block' }
@@ -53,8 +53,8 @@ const CarouselCard: React.FC<Props> = ({ imgPath, label }) => {
           position: 'absolute',
           bottom: 0,
           borderStyle: 'solid',
-          borderColor: 'white',
-          border: 5,
+          borderColor: 'divider',
+          borderWidth: '5px',
           margin: 'auto 20px 20px 20px',
           background: 'rgb(0, 0, 0, 0.4)',
           display: { xs: 'block', sm: 'none' }

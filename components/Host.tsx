@@ -8,8 +8,8 @@ const Host: React.FC = () => {
       sx={{
         height: '500px',
         justifyContent: 'center',
-        border: '2px',
-        borderColor: 'white',
+        borderWidth: '2px',
+        borderColor: 'divider',
         borderTopStyle: 'solid',
         width: '100%',
         display: 'grid',
@@ -45,7 +45,7 @@ const Host: React.FC = () => {
         sx={{
           height: { sm: '250px', xs: 'auto' },
           alignItems: 'center',
-          border: '2px',
+          borderWidth: '2px',
           width: '100%',
           display: 'flex',
           justifyContent: 'space-between',

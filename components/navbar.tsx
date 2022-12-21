@@ -60,8 +60,8 @@ const NavBar: React.FC = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          border: '2px',
-          borderColor: 'white',
+          borderWidth: '2px',
+          borderColor: 'divider',
           borderBottomStyle: 'solid'
         }}
       >
