@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 import TopBanner from '../components/TopBanner'
 import type { NextPage } from 'next'
 
