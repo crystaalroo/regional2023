@@ -1,11 +1,13 @@
-import NavBar from '../components/navbar'
-import Footer from '../components/footer'
-import Carousel from '../components/carousel'
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+import Carousel from '../components/Carousel'
 import Box from '@mui/material/Box'
 import TopBanner from '../components/TopBanner'
-import Statistics from '../components/statistics'
-import Host from '../components/host'
+import Statistics from '../components/Statistics'
+import Host from '../components/Host'
 import type { NextPage } from 'next'
+import MainBoard from '../components/MainBoard'
+import MainBoardCard from '../components/MainBoardCard'
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +15,14 @@ const Home: NextPage = () => {
       <TopBanner />
       <NavBar />
       <Carousel />
-      <Host />
-      <Statistics />
+      <MainBoard>
+        <MainBoardCard barSide="left">
+          <Host />
+        </MainBoardCard>
+        <MainBoardCard barSide="right">
+          <Statistics />
+        </MainBoardCard>
+      </MainBoard>
       <Footer />
     </Box>
   )
