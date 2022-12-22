@@ -230,14 +230,15 @@ const NavBar: React.FC = () => {
               }}
             >
               {pages.map(page => (
-                <Button
-                  key={page.name}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                  href={page.link}
-                >
-                  {page.name}
-                </Button>
+                <Link key={page.name} href={page.link}>
+                  <Button
+                    key={page.name}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: 'white', display: 'block' }}
+                  >
+                    {page.name}
+                  </Button>
+                </Link>
               ))}
             </Box>
           </Box>

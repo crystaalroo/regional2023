@@ -1,30 +1,30 @@
 import * as React from 'react'
-import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
-import Toolbar from '@mui/material/Toolbar'
 
 const Footer: React.FC = () => {
   return (
-    <AppBar
-      position="static"
+    <Box
       sx={{
         height: { sm: '200px', xs: 'auto' },
         alignItems: 'center',
         borderWidth: '2px',
         borderColor: 'divider',
         borderTopStyle: 'solid',
-        backgroundColor: 'secondary.main'
+        backgroundColor: 'secondary.main',
+        position: 'static',
+        display: 'flex',
+        justifyContent: 'center'
       }}
     >
-      <Toolbar
-        disableGutters
+      <Box
         sx={{
           width: '100%',
           height: '100%',
           maxWidth: '1280px',
           display: 'flex',
           flexDirection: { sm: 'row', xs: 'column' },
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
+          alignItems: 'center'
         }}
       >
         <Box
@@ -47,8 +47,8 @@ const Footer: React.FC = () => {
           src="/assets/itesologo.png"
           alt="iteso"
         />
-      </Toolbar>
-    </AppBar>
+      </Box>
+    </Box>
   )
 }
 export default Footer
