@@ -7,7 +7,7 @@ import Statistics from '../components/Statistics'
 import Host from '../components/Host'
 import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
-import MainBoardCard from '../components/MainBoardCard'
+import BoardCard from '../components/BoardCard'
 import Sponsors from '../components/Sponsors'
 import Intro from '../components/Intro'
 import Icpc from '../components/Icpc'
@@ -18,21 +18,21 @@ const Home: NextPage = () => {
       <NavBar />
       <Carousel />
       <MainBoard>
-        <MainBoardCard barSide="left">
+        <BoardCard barSide="left">
           <Intro />
-        </MainBoardCard>
-        <MainBoardCard barSide="right">
+        </BoardCard>
+        <BoardCard barSide="right">
           <Host />
-        </MainBoardCard>
-        <MainBoardCard barSide="left">
+        </BoardCard>
+        <BoardCard barSide="left">
           <Statistics />
-        </MainBoardCard>
-        <MainBoardCard barSide="right">
+        </BoardCard>
+        <BoardCard barSide="right">
           <Sponsors />
-        </MainBoardCard>
-        <MainBoardCard barSide="left">
+        </BoardCard>
+        <BoardCard barSide="left">
           <Icpc />
-        </MainBoardCard>
+        </BoardCard>
       </MainBoard>
       <Footer />
     </Box>
