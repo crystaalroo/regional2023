@@ -18,7 +18,7 @@ const themeOptions: ThemeOptions = {
       paper: '#1b263b'
     },
     text: {
-      primary: '#BBBBBB',
+      primary: '#FFFFFF',
       secondary: '#BBBBBB',
       disabled: '#BBBBBB'
     },
@@ -72,7 +72,7 @@ const themeOptions: ThemeOptions = {
       fontFamily: 'Chivo',
       fontSize: '1rem',
       fontWeight: 400,
-      lineHeight: 1.5
+      lineHeight: '30px'
     },
     body2: {
       fontFamily: 'Chivo',

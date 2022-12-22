@@ -26,10 +26,6 @@ const images = [
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: 'relative',
   height: '300px',
-  [theme.breakpoints.down('sm')]: {
-    width: '100% !important', // Overrides inline-style
-    height: '100px'
-  },
   '&:hover, &.Mui-focusVisible': {
     zIndex: 1,
     '& .MuiImageBackdrop-root': {
@@ -41,8 +37,24 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     },
     '& .MuiTypography-root': {
       border: '4px solid currentColor',
-      fontSize: '1.5rem',
+      fontSize: '3rem',
       transition: 'all 0.5s'
+    }
+  },
+  [theme.breakpoints.down('md')]: {
+    '&:hover, &.Mui-focusVisible': {
+      '& .MuiTypography-root': {
+        fontSize: '2.5rem'
+      }
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '100% !important', // Overrides inline-style
+    height: '150px',
+    '&:hover, &.Mui-focusVisible': {
+      '& .MuiTypography-root': {
+        fontSize: '2rem'
+      }
     }
   }
 }))
@@ -114,7 +126,7 @@ const Statistics: React.FC = () => {
           <Image>
             <Typography
               component="span"
-              variant="subtitle1"
+              variant="h4"
               color="inherit"
               sx={{
                 position: 'relative',
