@@ -19,7 +19,7 @@ function FillText({ title }): JSX.Element {
       <Typography align="center" variant="h3" paddingBottom={'35px'}>
         {title}
       </Typography>
-      <Typography align="justify" variant="body1">
+      <Typography align="justify" variant="body1" color={'text.secondary'}>
         {loremIpsum({
           count: 5,
           units: 'paragraph'

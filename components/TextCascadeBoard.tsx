@@ -23,8 +23,10 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
     <Box
       sx={{
         width: '100%',
+        maxWidth: '1380px',
         height: 'auto',
         padding: { md: '0 50px', xs: '0 10px' },
+        margin: '0 auto',
         position: 'relative',
         display: 'flex',
         flexDirection: { sm: 'row', xs: 'column' },
@@ -57,9 +59,9 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
           <Typography variant="h5">{props.title}</Typography>
           <List>
             {props.menu.map(section => (
-              <ListItem key={section}>
+              <ListItem key={section} sx={{ paddingLeft: 0 }}>
                 <Link href={`#${section}`}>
-                  <ListItemButton>
+                  <ListItemButton sx={{ padding: 0 }}>
                     <ListItemIcon>
                       {/* <CircleIcon /> */}
                       <KeyboardArrowRightIcon
@@ -68,7 +70,9 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
                         }}
                       />
                     </ListItemIcon>
-                    <ListItemText>{section}</ListItemText>
+                    <ListItemText>
+                      <Typography variant="button">{section}</Typography>
+                    </ListItemText>
                   </ListItemButton>
                 </Link>
               </ListItem>
