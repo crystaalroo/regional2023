@@ -4,11 +4,13 @@ import { Box } from '@mui/material'
 interface Props {
   children: React.ReactNode
   barSide: 'left' | 'right'
+  id?: string
 }
 
-const MainBoardCard: React.FC<Props> = ({ children, barSide }) => {
+const BoardCard: React.FC<Props> = ({ children, barSide, id }) => {
   return (
     <Box
+      id={id}
       sx={{
         width: '100%',
         height: 'auto',
@@ -50,4 +52,4 @@ const MainBoardCard: React.FC<Props> = ({ children, barSide }) => {
     </Box>
   )
 }
-export default MainBoardCard
+export default BoardCard
