@@ -8,6 +8,7 @@ import Host from '../components/Host'
 import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import MainBoardCard from '../components/MainBoardCard'
+import Sponsors from '../components/Sponsors'
 
 const Home: NextPage = () => {
   return (
@@ -16,11 +17,14 @@ const Home: NextPage = () => {
       <NavBar />
       <Carousel />
       <MainBoard>
-        <MainBoardCard barSide="left">
+        <MainBoardCard barSide="right">
           <Host />
         </MainBoardCard>
-        <MainBoardCard barSide="right">
+        <MainBoardCard barSide="left">
           <Statistics />
+        </MainBoardCard>
+        <MainBoardCard barSide="right">
+          <Sponsors />
         </MainBoardCard>
       </MainBoard>
       <Footer />

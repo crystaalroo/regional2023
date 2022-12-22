@@ -2,7 +2,7 @@ import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
-const Host: React.FC = () => {
+const Sponsors: React.FC = () => {
   return (
     <Box
       sx={{
@@ -24,7 +24,7 @@ const Host: React.FC = () => {
           width: '100%'
         }}
       >
-        HOST Y ORGANIZADORES
+        Patrocinadores
       </Typography>
       <Box
         component="img"
@@ -53,4 +53,4 @@ const Host: React.FC = () => {
     </Box>
   )
 }
-export default Host
+export default Sponsors

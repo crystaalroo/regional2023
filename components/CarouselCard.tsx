@@ -47,7 +47,7 @@ const CarouselCard: React.FC<Props> = ({ imgPath, label }) => {
           variant="h1"
           component="div"
           align="left"
-          color={'white'}
+          color={'primary.contrastText'}
           sx={{
             position: 'absolute',
             bottom: 0,
