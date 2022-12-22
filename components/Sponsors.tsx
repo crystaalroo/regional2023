@@ -24,7 +24,7 @@ const Sponsors: React.FC = () => {
           width: '100%'
         }}
       >
-        Patrocinadores
+        PATROCINADORES
       </Typography>
       <Box
         component="img"

@@ -9,7 +9,8 @@ import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import MainBoardCard from '../components/MainBoardCard'
 import Sponsors from '../components/Sponsors'
-
+import Intro from '../components/Intro'
+import Icpc from '../components/Icpc'
 const Home: NextPage = () => {
   return (
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
@@ -17,6 +18,9 @@ const Home: NextPage = () => {
       <NavBar />
       <Carousel />
       <MainBoard>
+        <MainBoardCard barSide="left">
+          <Intro />
+        </MainBoardCard>
         <MainBoardCard barSide="right">
           <Host />
         </MainBoardCard>
@@ -25,6 +29,9 @@ const Home: NextPage = () => {
         </MainBoardCard>
         <MainBoardCard barSide="right">
           <Sponsors />
+        </MainBoardCard>
+        <MainBoardCard barSide="left">
+          <Icpc />
         </MainBoardCard>
       </MainBoard>
       <Footer />
