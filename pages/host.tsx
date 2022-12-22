@@ -8,7 +8,7 @@ import BoardCard from '../components/BoardCard'
 import { loremIpsum } from 'lorem-ipsum'
 import { Typography } from '@mui/material'
 
-function FillText({ title }): JSX.Element {
+function FillText(props: { title: string }): JSX.Element {
   return (
     <Box
       sx={{
@@ -17,7 +17,7 @@ function FillText({ title }): JSX.Element {
       }}
     >
       <Typography align="center" variant="h3" paddingBottom={'35px'}>
-        {title}
+        {props.title}
       </Typography>
       <Typography align="justify" variant="body1" color={'text.secondary'}>
         {loremIpsum({
