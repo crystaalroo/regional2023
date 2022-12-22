@@ -40,8 +40,7 @@ const Icpc: React.FC = () => {
           src="/assets/icpcmain.png"
           alt="icpcmx"
           sx={{
-            width: { md: '60%', xs: '100%' },
-            shapeOutside: `url('/assets/icpcmain.png')`
+            width: { md: '60%', xs: '100%' }
           }}
         />
         <Typography variant="body1" component="div" color={'text.secondary'}>
