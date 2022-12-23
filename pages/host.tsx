@@ -7,6 +7,8 @@ import TextCascadeBoard from '../components/TextCascadeBoard'
 import BoardCard from '../components/BoardCard'
 import { loremIpsum } from 'lorem-ipsum'
 import { Typography } from '@mui/material'
+import HostHotel from '../components/HostHotel'
+import Guadalajara from '../components/Guadalajara'
 
 function FillText(props: { title: string }): JSX.Element {
   return (
@@ -43,10 +45,10 @@ const Host: NextPage = () => {
           <FillText title={'Universidad Sede'} />
         </BoardCard>
         <BoardCard barSide="right">
-          <FillText title={'Hoteles'} />
+          <HostHotel />
         </BoardCard>
         <BoardCard barSide="right">
-          <FillText title={'Guadalajara'} />
+          <Guadalajara />
         </BoardCard>
       </TextCascadeBoard>
       <Footer />
