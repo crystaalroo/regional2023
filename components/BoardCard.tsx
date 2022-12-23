@@ -1,13 +1,14 @@
 import * as React from 'react'
-import { Box } from '@mui/material'
+import { Box, SxProps, Theme } from '@mui/material'
 
 interface Props {
   children: React.ReactNode
-  barSide: 'left' | 'right'
+  barSide: 'left' | 'right' | 'none'
   id?: string
+  sx?: SxProps<Theme> | undefined
 }
 
-const BoardCard: React.FC<Props> = ({ children, barSide, id }) => {
+const BoardCard: React.FC<Props> = ({ children, barSide, id, sx }) => {
   return (
     <Box
       id={id}
@@ -35,7 +36,8 @@ const BoardCard: React.FC<Props> = ({ children, barSide, id }) => {
           flexBasis: 0,
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '70px 0'
+          padding: '70px 0',
+          ...sx
         }}
       >
         {children}

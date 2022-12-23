@@ -6,6 +6,7 @@ import Guillot from '../components/Guillot'
 import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import Social from '../components/Social'
+import BoardCard from '../components/BoardCard'
 
 // ********************************************************************************
 const Contact: NextPage = () => {
@@ -14,8 +15,12 @@ const Contact: NextPage = () => {
       <TopBanner />
       <NavBar />
       <MainBoard>
-        <Guillot />
-        <Social />
+        <BoardCard barSide="none" sx={{ padding: '30px' }}>
+          <Guillot />
+        </BoardCard>
+        <BoardCard barSide="none" sx={{ padding: '30px' }}>
+          <Social />
+        </BoardCard>
       </MainBoard>
       <Footer />
     </Box>
