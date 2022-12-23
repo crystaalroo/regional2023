@@ -16,6 +16,7 @@ interface Props {
   children: React.ReactNode
   title: string
   menu: string[]
+  turnOffStickyMenu?: boolean
 }
 
 const TextCascadeBoard: React.FC<Props> = (props: Props) => {
@@ -45,7 +46,15 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
       >
         <Box
           sx={{
-            position: { sm: 'sticky', xs: 'static' },
+            position: {
+              sm:
+                props.turnOffStickyMenu === null ||
+                props.turnOffStickyMenu === false ||
+                props.turnOffStickyMenu === undefined
+                  ? 'sticky'
+                  : 'static',
+              xs: 'static'
+            },
             width: '100%',
             top: '50px',
             left: 0,
