@@ -28,9 +28,6 @@ const Home: NextPage = () => {
           <Statistics />
         </BoardCard>
         <BoardCard barSide="right">
-          <Sponsors />
-        </BoardCard>
-        <BoardCard barSide="left">
           <Icpc />
         </BoardCard>
       </MainBoard>

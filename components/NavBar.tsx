@@ -10,7 +10,8 @@ import {
   Menu,
   MenuItem,
   Toolbar,
-  Typography
+  Typography,
+  Link as ExternalLink
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import Link from 'next/link'
@@ -19,18 +20,6 @@ const pages = [
   {
     name: 'Contacto',
     link: '/contact'
-  },
-  {
-    name: 'Host',
-    link: '/host'
-  },
-  {
-    name: 'Participantes',
-    link: '/participants'
-  },
-  {
-    name: 'Main()',
-    link: '/'
   }
 ]
 const revPages = pages.map(x => x).reverse()
@@ -220,6 +209,15 @@ const NavBar: React.FC = () => {
                     </MenuItem>
                   </Link>
                 ))}
+                <ExternalLink
+                  key="Sede"
+                  href="https://iteso.mx/"
+                  target={'blank'}
+                >
+                  <MenuItem key="Sede" onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{'Sede'}</Typography>
+                  </MenuItem>
+                </ExternalLink>
               </Menu>
             </Box>
             <Box
@@ -244,6 +242,23 @@ const NavBar: React.FC = () => {
                   </Button>
                 </Link>
               ))}
+              <ExternalLink
+                key="Sede"
+                href="https://iteso.mx/"
+                target={'blank'}
+              >
+                <Button
+                  key="Sede"
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    color: 'primary.contrastText',
+                    display: 'block'
+                  }}
+                >
+                  {'Sede'}
+                </Button>
+              </ExternalLink>
             </Box>
           </Box>
         </Toolbar>

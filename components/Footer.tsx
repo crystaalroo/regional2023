@@ -1,5 +1,7 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
+import { Link as ExternalLink } from '@mui/material'
+import Link from 'next/link'
 
 const Footer: React.FC = () => {
   return (
@@ -27,26 +29,30 @@ const Footer: React.FC = () => {
           alignItems: 'center'
         }}
       >
-        <Box
-          component="img"
-          sx={{
-            width: '150pt',
-            objectFit: 'cover',
-            padding: { sm: '0 0 0 50px', xs: '25px 0' }
-          }}
-          src="/assets/mexicobn.png"
-          alt="icpcmx"
-        />
-        <Box
-          component="img"
-          sx={{
-            width: '180pt',
-            objectFit: 'cover',
-            padding: { sm: '0 50px 0 0', xs: '25px 0' }
-          }}
-          src="/assets/itesologo.png"
-          alt="iteso"
-        />
+        <Link key="home" href="/">
+          <Box
+            component="img"
+            sx={{
+              width: '150pt',
+              objectFit: 'cover',
+              padding: { sm: '0 0 0 50px', xs: '25px 0' }
+            }}
+            src="/assets/mexicobn.png"
+            alt="icpcmx"
+          />
+        </Link>
+        <ExternalLink key="Sede" href="https://iteso.mx/" target={'blank'}>
+          <Box
+            component="img"
+            sx={{
+              width: '180pt',
+              objectFit: 'cover',
+              padding: { sm: '0 50px 0 0', xs: '25px 0' }
+            }}
+            src="/assets/itesologo.png"
+            alt="iteso"
+          />
+        </ExternalLink>
       </Box>
     </Box>
   )

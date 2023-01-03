@@ -3,23 +3,42 @@ import { styled } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import ButtonBase from '@mui/material/ButtonBase'
 import Typography from '@mui/material/Typography'
+import { Link as ExternalLink } from '@mui/material'
+import Link from 'next/link'
 
-const images = [
+const imagesE = [
   {
-    url: '/assets/site.jpg',
-    title: 'X equipos'
+    url: '/assets/mapaiteso.jpg',
+    title: 'Mapa ITESO',
+    link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
+  }
+]
+
+const imagesI = [
+  {
+    url: '/assets/agendaicpc.jpg',
+    title: 'Agenda',
+    link: '/agenda'
   },
   {
-    url: '/assets/contest.jpg',
-    title: 'X equipos'
+    url: '/assets/holiday_inn_express_guadalajara_iteso.jpg',
+    title: 'Hospedaje',
+    link: '/hotel'
+  },
+  {
+    url: '/assets/mapaiteso.jpg',
+    title: 'Patrocinadores',
+    link: '/sponsors'
   },
   {
     url: '/assets/girls.jpg',
-    title: 'X mujeres'
+    title: 'Pagos',
+    link: '/'
   },
   {
-    url: '/assets/cucei.jpg',
-    title: 'X cosas'
+    url: '/assets/contest.jpg',
+    title: 'Participantes',
+    link: '/participants'
   }
 ]
 
@@ -111,35 +130,76 @@ const Statistics: React.FC = () => {
         width: '100%'
       }}
     >
-      {images.map(image => (
-        <ImageButton
-          focusRipple
-          key={image.title}
-          style={{
-            width: '48%',
-            margin: '1%'
+      {imagesI.map(image => (
+        <Link key="home" href={image.link}>
+          <ImageButton
+            focusRipple
+            key={image.title}
+            style={{
+              width: '48%',
+              margin: '1%'
+            }}
+          >
+            <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+            <ImageBackdrop className="MuiImageBackdrop-root" />
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
+            <Image>
+              <Typography
+                component="span"
+                variant="h4"
+                color="inherit"
+                sx={{
+                  position: 'relative',
+                  p: '4px',
+                  pt: '2px',
+                  pb: theme => `calc(${theme.spacing(1)} + 6px)`
+                }}
+              >
+                {image.title}
+                <ImageMarked className="MuiImageMarked-root" />
+              </Typography>
+            </Image>
+          </ImageButton>
+        </Link>
+      ))}
+      {imagesE.map(image => (
+        <ExternalLink
+          key="Sede"
+          href="https://www.iteso.mx/documents/2624322/0/Mapa+del+campus"
+          sx={{
+            width: { sm: '48%', xs: '100%' },
+            margin: { sm: '1%', xs: 'none' }
           }}
+          target={'blank'}
         >
-          <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
-          <ImageBackdrop className="MuiImageBackdrop-root" />
-          {/* eslint-disable-next-line jsx-a11y/alt-text */}
-          <Image>
-            <Typography
-              component="span"
-              variant="h4"
-              color="inherit"
-              sx={{
-                position: 'relative',
-                p: '4px',
-                pt: '2px',
-                pb: theme => `calc(${theme.spacing(1)} + 6px)`
-              }}
-            >
-              {image.title}
-              <ImageMarked className="MuiImageMarked-root" />
-            </Typography>
-          </Image>
-        </ImageButton>
+          <ImageButton
+            focusRipple
+            key={image.title}
+            style={{
+              width: '100%'
+            }}
+          >
+            <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+            <ImageBackdrop className="MuiImageBackdrop-root" />
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
+            <Image>
+              <Typography
+                component="span"
+                variant="h4"
+                color="inherit"
+                sx={{
+                  position: 'relative',
+                  p: '4px',
+                  pt: '2px',
+                  pb: theme => `calc(${theme.spacing(1)} + 6px)`
+                }}
+              >
+                {image.title}
+                <ImageMarked className="MuiImageMarked-root" />
+              </Typography>
+            </Image>
+          </ImageButton>
+        </ExternalLink>
       ))}
     </Box>
   )

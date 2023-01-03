@@ -57,19 +57,14 @@ const Guillot: React.FC = () => {
         <Typography variant="body1" component="div" color={'text.secondary'}>
           Mtro. Carlos Alberto Fernández Guillot
         </Typography>
-        <Box
-          sx={{
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            display: 'flex',
-            gap: '1%'
-          }}
-        >
+        <Typography variant="body1" component="div" color={'text.secondary'}>
           <EmailIcon />
-          <Typography variant="body1" component="div" color={'text.secondary'}>
-            carlosf@iteso.mx
-          </Typography>
-        </Box>
+          carlosf@iteso.mx
+        </Typography>
+        <Typography variant="body1" component="div" color={'text.secondary'}>
+          <EmailIcon />
+          guillot@icpcmexico.org
+        </Typography>
       </Box>
     </Box>
   )
