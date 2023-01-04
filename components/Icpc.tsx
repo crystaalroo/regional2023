@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import { Link as ExternalLink } from '@mui/material'
 
 const Icpc: React.FC = () => {
   return (
@@ -35,15 +36,25 @@ const Icpc: React.FC = () => {
           alignItems: 'center'
         }}
       >
-        <Box
-          component="img"
-          src="/assets/icpcmain.png"
-          alt="icpcmx"
-          sx={{
-            width: { md: '60%', xs: '100%' }
-          }}
-        />
-        <Typography variant="body1" component="div" color={'text.secondary'}>
+        <ExternalLink
+          key="Sede"
+          href="https://icpc.global/"
+          target={'blank'}
+          sx={{ width: { md: '40%', xs: '100%' } }}
+        >
+          <Box
+            component="img"
+            src="/assets/icpcmain.png"
+            alt="icpcmx"
+            sx={{ width: '100%' }}
+          />
+        </ExternalLink>
+        <Typography
+          variant="body1"
+          component="div"
+          color={'text.secondary'}
+          sx={{ width: { md: '60%', xs: '100%' } }}
+        >
           La ICPC organiza el concurso de programacion algoritmica para
           universitarios, en equipos de tres, en representación de su
           universidad, trabajan para resolver la mayoría de los problemas del

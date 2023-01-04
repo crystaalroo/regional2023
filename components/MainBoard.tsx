@@ -1,11 +1,12 @@
 import * as React from 'react'
-import { Box } from '@mui/material'
+import { Box, SxProps, Theme } from '@mui/material'
 
 interface Props {
   children: React.ReactNode
+  sx?: SxProps<Theme> | undefined
 }
 
-const MainBoard: React.FC<Props> = ({ children }) => {
+const MainBoard: React.FC<Props> = ({ children, sx }) => {
   return (
     <Box
       sx={{
@@ -15,7 +16,8 @@ const MainBoard: React.FC<Props> = ({ children }) => {
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        ...sx
       }}
     >
       <Box

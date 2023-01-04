@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import { Link as ExternalLink } from '@mui/material'
+import Link from 'next/link'
 
 const Host: React.FC = () => {
   return (
@@ -24,32 +26,41 @@ const Host: React.FC = () => {
           width: '100%'
         }}
       >
-        HOST Y ORGANIZADORES
+        SEDE Y ORGANIZADORES
       </Typography>
-      <Box
-        component="img"
-        sx={{
-          width: { sm: '50%', xs: '100%' },
-          height: '150px',
-          padding: { sm: '0 12%', xs: '0 20%' },
-          objectFit: 'contain',
-          display: 'flex'
-        }}
-        src="/assets/icpcmx.png"
-        alt="icpcmx"
-      />
-      <Box
-        component="img"
-        sx={{
-          width: { sm: '50%', xs: '100%' },
-          height: '150px',
-          padding: '0 12.5%',
-          objectFit: 'contain',
-          display: 'flex'
-        }}
-        src="/assets/iteso-vertical.png"
-        alt="icpcmx"
-      />
+      <Link key="home" href="/">
+        <Box
+          component="img"
+          sx={{
+            width: { sm: '50%', xs: '100%' },
+            height: '150px',
+            padding: { sm: '0 12%', xs: '0 20%' },
+            objectFit: 'contain',
+            display: 'flex'
+          }}
+          src="/assets/icpcmx.png"
+          alt="icpcmx"
+        />
+      </Link>
+      <ExternalLink
+        key="Sede"
+        href="https://iteso.mx/"
+        target={'blank'}
+        sx={{ width: { sm: '50%', xs: '100%' } }}
+      >
+        <Box
+          component="img"
+          sx={{
+            width: '100%',
+            height: '150px',
+            padding: '0 12.5%',
+            objectFit: 'contain',
+            display: 'flex'
+          }}
+          src="/assets/iteso-vertical.png"
+          alt="icpcmx"
+        />
+      </ExternalLink>
     </Box>
   )
 }
