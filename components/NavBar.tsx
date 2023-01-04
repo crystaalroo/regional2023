@@ -215,7 +215,12 @@ const NavBar: React.FC = () => {
                   target={'blank'}
                 >
                   <MenuItem key="Sede" onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{'Sede'}</Typography>
+                    <Typography
+                      textAlign="center"
+                      sx={{ color: 'primary.contrastText' }}
+                    >
+                      Sede
+                    </Typography>
                   </MenuItem>
                 </ExternalLink>
               </Menu>
