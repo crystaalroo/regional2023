@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
 import TableCell, { tableCellClasses } from '@mui/material/TableCell'
-import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
@@ -45,7 +44,7 @@ function createData(
   r6: string,
   r7: string,
   r8: string
-) {
+): Record<string, string> {
   return { r1, r2, r3, r4, r5, r6, r7, r8 }
 }
 
@@ -223,7 +222,7 @@ export const AgendaTable17: React.FC = () => {
           <TableHead>
             <TableRow>
               {titles.map(title => (
-                <StyledTableCell>
+                <StyledTableCell key={title}>
                   <Typography variant="subtitle2">{title}</Typography>
                 </StyledTableCell>
               ))}
@@ -273,7 +272,7 @@ export const AgendaTable18: React.FC = () => {
           <TableHead>
             <TableRow>
               {titles.map(title => (
-                <StyledTableCell>
+                <StyledTableCell key={title}>
                   <Typography variant="subtitle2">{title}</Typography>
                 </StyledTableCell>
               ))}
