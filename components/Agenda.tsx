@@ -23,9 +23,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     backgroundColor: theme.palette.common.black,
     color: theme.palette.common.white
-  },
-  [`&.${tableCellClasses.body}`]: {
-    fontSize: 14
   }
 }))
 
@@ -218,94 +215,102 @@ const rowsS = [
   )
 ]
 
-const AgendaTable: React.FC = () => {
+export const AgendaTable17: React.FC = () => {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}
-    >
-      <Typography
-        variant="h4"
-        component="div"
-        align="center"
-        color={'primary.contrastText'}
-        sx={{
-          margin: 'auto 20px 20px 20px',
-          display: 'block',
-          width: '100%'
-        }}
-      >
-        Viernes: 17 de Marzo de 2023
-      </Typography>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 700 }} aria-label="customized table">
+    <Box width={'100%'}>
+      <Paper sx={{ width: '100%', minWidth: '900px' }}>
+        <Table aria-label="customized table">
           <TableHead>
             <TableRow>
               {titles.map(title => (
-                <StyledTableCell>{title}</StyledTableCell>
+                <StyledTableCell>
+                  <Typography variant="subtitle2">{title}</Typography>
+                </StyledTableCell>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map(row => (
               <StyledTableRow key={row.r1}>
-                <StyledTableCell align="center">{row.r1}</StyledTableCell>
-                <StyledTableCell align="center">{row.r2}</StyledTableCell>
-                <StyledTableCell align="center">{row.r3}</StyledTableCell>
-                <StyledTableCell align="center">{row.r4}</StyledTableCell>
-                <StyledTableCell align="center">{row.r5}</StyledTableCell>
-                <StyledTableCell align="center">{row.r6}</StyledTableCell>
-                <StyledTableCell align="center">{row.r7}</StyledTableCell>
-                <StyledTableCell align="center">{row.r8}</StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r1}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r2}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r3}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r4}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r5}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r6}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r7}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r8}</Typography>
+                </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
-      <Typography
-        variant="h4"
-        component="div"
-        align="center"
-        color={'primary.contrastText'}
-        sx={{
-          margin: 'auto 20px 20px 20px',
-          display: 'block',
-          width: '100%'
-        }}
-      >
-        Sabado: 18 de Marzo de 2023
-      </Typography>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      </Paper>
+    </Box>
+  )
+}
+
+export const AgendaTable18: React.FC = () => {
+  return (
+    <Box width={'100%'}>
+      <Paper sx={{ width: '100%', minWidth: '900px' }}>
+        <Table aria-label="customized table">
           <TableHead>
             <TableRow>
               {titles.map(title => (
-                <StyledTableCell>{title}</StyledTableCell>
+                <StyledTableCell>
+                  <Typography variant="subtitle2">{title}</Typography>
+                </StyledTableCell>
               ))}
             </TableRow>
           </TableHead>
           <TableBody>
             {rowsS.map(row => (
               <StyledTableRow key={row.r1}>
-                <StyledTableCell align="center">{row.r1}</StyledTableCell>
-                <StyledTableCell align="center">{row.r2}</StyledTableCell>
-                <StyledTableCell align="center">{row.r3}</StyledTableCell>
-                <StyledTableCell align="center">{row.r4}</StyledTableCell>
-                <StyledTableCell align="center">{row.r5}</StyledTableCell>
-                <StyledTableCell align="center">{row.r6}</StyledTableCell>
-                <StyledTableCell align="center">{row.r7}</StyledTableCell>
-                <StyledTableCell align="center">{row.r8}</StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r1}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r2}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r3}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r4}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r5}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r6}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r7}</Typography>
+                </StyledTableCell>
+                <StyledTableCell align="center">
+                  <Typography variant="body2">{row.r8}</Typography>
+                </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </Paper>
     </Box>
   )
 }
-export default AgendaTable
