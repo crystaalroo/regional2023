@@ -30,15 +30,11 @@
   },
   "devDependencies": {
     "@types/react-swipeable-views-utils": "^0.13.4",
-    "@typescript-eslint/eslint-plugin": "^5.47.0",
     "eslint": "^8.30.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard-with-typescript": "^21.0.1",
-    "eslint-plugin-import": "^2.24.1",
-    "eslint-plugin-n": "^15.6.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^27.0.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.2",
     "typescript": "^4.9.4"
   }
 }
