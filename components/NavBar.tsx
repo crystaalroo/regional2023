@@ -148,24 +148,26 @@ const NavBar: React.FC = () => {
                 flexBasis: 0
               }}
             />
-            <Box
-              sx={{
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                flexBasis: 0,
-                justifyContent: 'center',
-                alignItems: 'center'
-              }}
-            >
-              <CardMedia
-                component="img"
-                image="/assets/icpcmx.png"
-                alt="icpcmx"
+            <Link key={'card'} href={'/'}>
+              <Box
                 sx={{
-                  width: '140px'
+                  display: { xs: 'flex', md: 'none' },
+                  flexGrow: 1,
+                  flexBasis: 0,
+                  justifyContent: 'center',
+                  alignItems: 'center'
                 }}
-              />
-            </Box>
+              >
+                <CardMedia
+                  component="img"
+                  image="/assets/icpcmx.png"
+                  alt="icpcmx"
+                  sx={{
+                    width: '140px'
+                  }}
+                />
+              </Box>
+            </Link>
             <Box
               sx={{
                 flexDirection: 'row-reverse',

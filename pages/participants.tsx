@@ -18,6 +18,10 @@ interface Props {
 
 const Participants: NextPage<Props> = ({ dataByUniversity }) => {
   const universities = Object.keys(dataByUniversity).sort()
+  universities.push(
+    universities.splice(universities.indexOf('Invitados'), 1)[0]
+  )
+  console.debug(universities)
   return (
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
       <TopBanner />

@@ -8,7 +8,6 @@ import Host from '../components/Host'
 import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import BoardCard from '../components/BoardCard'
-import Sponsors from '../components/Sponsors'
 import Intro from '../components/Intro'
 import Icpc from '../components/Icpc'
 const Home: NextPage = () => {

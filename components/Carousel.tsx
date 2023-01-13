@@ -13,7 +13,7 @@ const images = [
     imgPath: '/assets/iteso.jpeg'
   },
   {
-    label: '180 EQUIPOS',
+    label: '60 EQUIPOS',
     imgPath: '/assets/icpc_balloons.jpeg'
   },
   {
