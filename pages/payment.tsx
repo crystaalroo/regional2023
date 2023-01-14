@@ -5,9 +5,8 @@ import TopBanner from '../components/TopBanner'
 import type { NextPage } from 'next'
 import BoardCard from '../components/BoardCard'
 import MainBoard from '../components/MainBoard'
-import { List, ListItem, Typography } from '@mui/material'
+import { List, ListItem, Typography, Link as ExternalLink } from '@mui/material'
 import { PaymentTable } from '../components/PaymentTable'
-import { Link as ExternalLink } from '@mui/material'
 
 // ********************************************************************************
 
