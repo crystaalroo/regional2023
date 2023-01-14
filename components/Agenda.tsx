@@ -57,7 +57,7 @@ const rows = [
     'Registro Regional y Entrega de materiales.',
     'Holiday Inn Express Guadalajara ITESO',
     'Todos.',
-    'ICPC México / Hotel Sede'
+    'ICPC México / Hotel Convenio'
   ),
   createData(
     '15:00',
@@ -65,9 +65,9 @@ const rows = [
     '21:00',
     '-',
     'Registro en hotel.',
-    'Holiday Inn Express Guadalajara ITESO LiveUp Hampton Inn by Hilton Gdl Expo',
+    'Hoteles convenio',
     'Todos',
-    'Hotel Sede / ICPC México'
+    'Hotel convenio / ICPC México'
   ),
   createData(
     '15:00',
@@ -75,7 +75,7 @@ const rows = [
     '21:00',
     '23:00',
     'Asamblea de Directores de Sede de México. Incluye comida solo para directores de sede.',
-    'ITESO',
+    'ITESO, Edificio T, Salón T211',
     'Directores de Sede de México',
     'ICPC México / ITESO'
   ),
@@ -85,7 +85,7 @@ const rows = [
     '23:00',
     '24:00',
     'Inauguración y Premiación del Gran Premio 2022',
-    'ITESO',
+    'Auditorio Q, ITESO',
     'Todos',
     'ICPC México / ITESO'
   ),
@@ -115,7 +115,7 @@ const rows = [
     '02:00 (+1)',
     '03:00 (+1)',
     'Conferencias x Confirmar',
-    'ITESO',
+    'Auditorio Q, ITESO',
     'Todos',
     'ICPC México / ITESO'
   ),
@@ -125,7 +125,7 @@ const rows = [
     '03:00 (+1)',
     '04:00 (+1)',
     'Cena de Bienvenida',
-    'ITESO',
+    'Vivero',
     'Todos',
     'ICPC México / ITESO'
   ),
@@ -136,8 +136,8 @@ const rows = [
     '-',
     'Cierre del Primer Día. ',
     'Glorieta Entrada ITESO hacia cada Hotel Sede',
-    'Transportación para los alojados en el Hampton Inn.',
-    'ITESO / Hampton Inn'
+    'Todos',
+    ''
   )
 ]
 
@@ -148,19 +148,19 @@ const rowsS = [
     '12:00',
     '15:00',
     'Desayuno (Alojados en Livup desayunan en Holiday Inn Express Guadalajara ITESO',
-    'Hoteles Sede',
+    'Hoteles convenio',
     'Todos',
-    'Hoteles Sede'
+    ''
   ),
   createData(
     '9:00',
     '10:00',
     '15:00',
     '16:00',
-    'Traslado de Hoteles Sede al ITESO',
-    'Hoteles Sede ',
+    'Traslado de Hoteles convenio al ITESO',
+    'Hoteles convenio ',
     'Todos',
-    'Hoteles Sede / ITESO'
+    ''
   ),
   createData(
     '10:00',
@@ -198,7 +198,7 @@ const rowsS = [
     '22:00',
     '23:00',
     'Premiación y Clausura',
-    'ITESO',
+    'Auditorio Q',
     'Todos',
     'ICPC México / ITESO'
   ),
@@ -208,7 +208,7 @@ const rowsS = [
     '23:00',
     '01:00 (+1)',
     'Comida de Cierre',
-    'ITESO',
+    'Vivero',
     'Todos',
     'ICPC México / ITESO'
   )

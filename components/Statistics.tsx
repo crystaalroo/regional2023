@@ -33,7 +33,7 @@ const imagesI = [
   {
     url: '/assets/girls.jpg',
     title: 'Pagos',
-    link: '/'
+    link: '/payment'
   },
   {
     url: '/assets/contest.jpg',
