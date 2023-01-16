@@ -1,12 +1,26 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import { List, ListItem } from '@mui/material'
+import { List, ListItem, SxProps, Theme } from '@mui/material'
 
 export interface Props {
   name: string
   image: string
   benefits: string[]
+}
+
+interface Props1 {
+  children: React.ReactNode
+  sx?: SxProps<Theme> | undefined
+}
+const Item: React.FC<Props1> = ({ children, sx }) => {
+  return (
+    <ListItem sx={{ ...sx }}>
+      <Typography variant="body1" component="div" color={'text.secondary'}>
+        {children}
+      </Typography>
+    </ListItem>
+  )
 }
 
 const HotelCard: React.FC<Props> = ({ name, image, benefits }) => {
@@ -50,13 +64,9 @@ const HotelCard: React.FC<Props> = ({ name, image, benefits }) => {
       <List sx={{ listStyleType: 'disc', padding: '10% 0 0 0' }}>
         {benefits.map(ben => {
           return (
-            <ListItem
-              color={'text.secondary'}
-              sx={{ display: 'list-item' }}
-              key="ite"
-            >
+            <Item key={ben} sx={{ display: 'list-item' }}>
               {ben}
-            </ListItem>
+            </Item>
           )
         })}
       </List>
