@@ -62,7 +62,15 @@ const Payment: NextPage = () => {
             costos asociados son los siguientes:
           </Typography>
         </BoardCard>
-        <BoardCard barSide="right">
+        <BoardCard
+          barSide="right"
+          sx={{
+            width: '100%',
+            overflow: 'scroll',
+            alignItems: 'normal',
+            justifyContent: 'normal'
+          }}
+        >
           <PaymentTable />
         </BoardCard>
         <BoardCard barSide="right" sx={{ padding: 0 }}>
@@ -73,7 +81,9 @@ const Payment: NextPage = () => {
           </Typography>
         </BoardCard>
         <BoardCard barSide="right">
-          <List sx={{ listStyleType: 'disc', padding: 0 }}>
+          <List
+            sx={{ listStyleType: 'disc', color: 'text.secondary', padding: 0 }}
+          >
             <Typography color={'text.secondary'}>
               Comentarios sobre costos y pagos:
             </Typography>
@@ -147,7 +157,13 @@ const Payment: NextPage = () => {
           </List>
         </BoardCard>
         <BoardCard barSide="left">
-          <List sx={{ listStyleType: 'decimal', padding: 0 }}>
+          <List
+            sx={{
+              listStyleType: 'decimal',
+              padding: 0,
+              color: 'text.secondary'
+            }}
+          >
             <Typography color={'text.secondary'}>
               Instrucciones para el Pago y Facturación.
             </Typography>
@@ -169,12 +185,20 @@ const Payment: NextPage = () => {
               </ExternalLink>
               )
             </Item>
-            <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+            <Item
+              sx={{
+                textAlign: 'justify',
+                display: 'list-item',
+                color: 'text.secondary'
+              }}
+            >
               Una vez se cuente con el número de expediente se puede realizar el
               pago. Le recomendamos, en el caso de los EQUIPOS, hacer un solo
               pago sumando los correspondiente a todos los integrantes. Las
               alternativas para esto son:
-              <List sx={{ listStyleType: 'lower-alpha' }}>
+              <List
+                sx={{ listStyleType: 'lower-alpha', color: 'text.secondary' }}
+              >
                 <Item
                   sx={{
                     textAlign: 'justify',
@@ -184,7 +208,12 @@ const Payment: NextPage = () => {
                   <strong>
                     Para instituciones o personas sin cuenta BBVA BANCOMER
                   </strong>
-                  <List sx={{ listStyleType: 'lower-roman' }}>
+                  <List
+                    sx={{
+                      listStyleType: 'lower-roman',
+                      color: 'text.secondary'
+                    }}
+                  >
                     <Item
                       sx={{
                         textAlign: 'justify',
@@ -237,7 +266,12 @@ const Payment: NextPage = () => {
                     Para instituciones o personas cliente avanzado BBVA
                     BANCOMER.
                   </strong>
-                  <List sx={{ listStyleType: 'lower-roman' }}>
+                  <List
+                    sx={{
+                      listStyleType: 'lower-roman',
+                      color: 'text.secondary'
+                    }}
+                  >
                     <Item
                       sx={{
                         textAlign: 'justify',
