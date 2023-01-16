@@ -65,7 +65,9 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
             borderWidth: { sm: '0 0 0 2px', xs: '2px' }
           }}
         >
-          <Typography variant="h5">{props.title}</Typography>
+          <Typography variant="h5" color="primary.contrastText">
+            {props.title}
+          </Typography>
           <List>
             {props.menu.map(section => (
               <ListItem key={section} sx={{ paddingLeft: 0 }}>
@@ -103,17 +105,6 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
           justifyContent: 'center'
         }}
       >
-        {/* <Box // left bar
-          sx={{
-            width: '1%',
-            height: '100%',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            borderColor: 'divider',
-            borderRight: '1px solid'
-          }}
-        /> */}
         <Box // right bar
           sx={{
             width: '1%',
