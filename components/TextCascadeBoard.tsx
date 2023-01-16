@@ -80,7 +80,9 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
                       />
                     </ListItemIcon>
                     <ListItemText>
-                      <Typography variant="button">{section}</Typography>
+                      <Typography color="primary.contrastText" variant="button">
+                        {section}
+                      </Typography>
                     </ListItemText>
                   </ListItemButton>
                 </Link>

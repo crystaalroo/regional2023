@@ -95,6 +95,7 @@ const UniversityTeamsGrid: React.FC<Props> = ({ university, cards }) => {
         width={'100%'}
         align="center"
         paddingBottom={'35px'}
+        color={'primary.contrastText'}
       >
         {university}
       </Typography>

@@ -23,6 +23,7 @@ const HotelCard: React.FC<Props> = ({ name, image, benefits }) => {
         width={'100%'}
         align="center"
         paddingBottom={'35px'}
+        color={'primary.contrastText'}
       >
         {name}
       </Typography>
@@ -49,7 +50,11 @@ const HotelCard: React.FC<Props> = ({ name, image, benefits }) => {
       <List sx={{ listStyleType: 'disc', padding: '10% 0 0 0' }}>
         {benefits.map(ben => {
           return (
-            <ListItem sx={{ display: 'list-item' }} key="ite">
+            <ListItem
+              color={'text.secondary'}
+              sx={{ display: 'list-item' }}
+              key="ite"
+            >
               {ben}
             </ListItem>
           )
