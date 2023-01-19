@@ -307,6 +307,13 @@ const Payment: NextPage = () => {
               </List>
             </Item>
             <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+              INDEPENDIENTEMENTE DE LA FORMA DE PAGO ELEGIDA, ENVÍA EL
+              COMPROBANTE DE PAGO AL CORREO{' '}
+              <ExternalLink key="Sede" color="text.primary">
+                guillot@icpcmexico.org
+              </ExternalLink>{' '}
+            </Item>
+            <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
               Para solicitar la factura, se debe enviar la petición con la
               referencia al correo{' '}
               <ExternalLink key="Sede" color="text.primary">
