@@ -11,7 +11,8 @@ import {
   MenuItem,
   Toolbar,
   Typography,
-  Link as ExternalLink
+  Link as ExternalLink,
+  CardActionArea
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import Link from 'next/link'
@@ -93,51 +94,53 @@ const NavBar: React.FC = () => {
                     bgcolor: 'secondary.main'
                   }}
                 >
-                  <CardContent
-                    sx={{
-                      paddingTop: '12px',
-                      paddingBottom: '8px'
-                    }}
-                  >
-                    <Typography
-                      fontSize={'19px'}
-                      gutterBottom
-                      variant="body1"
-                      component="div"
-                      align="left"
-                      color={'white'}
-                    >
-                      REGIONAL ICPC MEXICO 2022
-                    </Typography>
-                  </CardContent>
-                  <Box
-                    sx={{
-                      padding: 0,
-                      height: '167px',
-                      width: '180px'
-                    }}
-                  >
-                    <Box
+                  <CardActionArea>
+                    <CardContent
                       sx={{
-                        backgroundColor: 'white',
-                        height: '140px',
-                        width: '140px',
-                        margin: 'auto',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center'
+                        paddingTop: '12px',
+                        paddingBottom: '8px'
                       }}
                     >
-                      <CardMedia
-                        component="img"
-                        image="/assets/icpcmx.png"
-                        alt="icpcmx"
+                      <Typography
+                        fontSize={'19px'}
+                        gutterBottom
+                        variant="body1"
+                        component="div"
+                        align="left"
+                        color={'white'}
+                      >
+                        REGIONAL ICPC MEXICO 2022
+                      </Typography>
+                    </CardContent>
+                    <Box
+                      sx={{
+                        padding: 0,
+                        height: '167px',
+                        width: '180px'
+                      }}
+                    >
+                      <Box
                         sx={{
-                          width: '100%'
+                          backgroundColor: 'white',
+                          height: '140px',
+                          width: '140px',
+                          margin: 'auto',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center'
                         }}
-                      />
+                      >
+                        <CardMedia
+                          component="img"
+                          image="/assets/icpcmx.png"
+                          alt="icpcmx"
+                          sx={{
+                            width: '100%'
+                          }}
+                        />
+                      </Box>
                     </Box>
-                  </Box>
+                  </CardActionArea>
                 </Card>
               </Link>
             </Box>
