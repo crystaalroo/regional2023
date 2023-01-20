@@ -11,7 +11,6 @@ export interface Props {
   dprice: string
   tprice: string
   cprice: string
-  rprice?: string
   time: string[]
   reservationNumber?: string
   optionalTitle: string
@@ -19,6 +18,7 @@ export interface Props {
   reservationLink?: string
   evento: string
   wid: boolean
+  cuadrup: string[]
 }
 
 interface Props1 {
@@ -48,14 +48,14 @@ const HotelCard: React.FC<Props> = ({
   dprice,
   tprice,
   cprice,
-  rprice,
   time,
   contactInfo,
   reservationNumber,
   optionalTitle,
   reservationLink,
   wid,
-  evento
+  evento,
+  cuadrup
 }) => {
   return (
     <Box
@@ -125,6 +125,13 @@ const HotelCard: React.FC<Props> = ({
             <Item key="okc" sx={{ display: 'list-item' }}>
               Habitación Cuádruple: <strong>{cprice} </strong>
               <List sx={{ listStyleType: 'square' }}>
+                {cuadrup.map(cua => {
+                  return (
+                    <Item key={cua} sx={{ display: 'list-item' }}>
+                      {cua}
+                    </Item>
+                  )
+                })}
                 <Item key="okc" sx={{ display: 'list-item' }}>
                   Habitación sencilla (1 cama King para 1 o 2 personas)
                 </Item>
@@ -134,11 +141,6 @@ const HotelCard: React.FC<Props> = ({
                 </Item>
               </List>
             </Item>
-            {rprice !== undefined && (
-              <Item key="okd" sx={{ display: 'list-item' }}>
-                Habitación Sencilla o Doble: <strong>{rprice} </strong>
-              </Item>
-            )}
           </List>
         </Item>
         <Item>
