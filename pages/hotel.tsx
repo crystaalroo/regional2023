@@ -20,7 +20,8 @@ const Hotel: NextPage = () => {
         menu={[
           'Holiday Inn Express ITESO',
           'Hampton by Hilton Guadalajara Expo',
-          'livUp'
+          'livUp',
+          'WYNDHAM GARDEN GUADALAJARA EXPO'
         ]}
         intro="El grupo esta en formato de SEGMENTO ABIERTO. Esto quiere decir que
         no existen habitaciones prereservadas para el evento. Les
@@ -45,7 +46,6 @@ const Hotel: NextPage = () => {
             dprice="1,517,50 MXN"
             tprice="1,993.50 MXN"
             cprice="2,469.50 MXN"
-            rprice="1,800.00 MXN"
             time={[
               'ITESO: Caminando, 5 minutos.',
               'LIVUP: Residencia estudiantil: Caminando, 8 - 10 minutos',
@@ -61,6 +61,10 @@ const Hotel: NextPage = () => {
             reservationLink="https://www.ihg.com/holidayinnexpress/hotels/us/es/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qSlH=gdlit&qRms=1&qAdlt=1&qChld=0&qCiD=17&qCiMy=022023&qCoD=18&qCoMy=022023&qGrpCd=ito&setPMCookies=true&qSHBrC=EX&qDest=Av%20Camino%20Al%20Iiteso%20:8650,%20Guadalajara,%20JAL,%20MX&qpMn=0&srb_u=1"
             wid={false}
             evento={'ITO'}
+            cuadrup={[
+              'Habitación sencilla (1 cama King para 1 o 2 personas)',
+              'Habitación doble (2 camas matrimoniales para 1 hasta 4 personas)'
+            ]}
           />
         </BoardCard>
         <BoardCard barSide="left">
@@ -84,7 +88,6 @@ const Hotel: NextPage = () => {
             dprice="1,517,50 MXN"
             tprice="1,993.50 MXN"
             cprice="2,469.50 MXN"
-            rprice="2,000.00 MXN"
             time={[
               'ITESO: Coche, 15 – 20 minutos.',
               'Aeropuerto Guadalajara: Coche, 30 – 35 minutos.'
@@ -101,6 +104,10 @@ const Hotel: NextPage = () => {
             }
             evento="ITO"
             wid={false}
+            cuadrup={[
+              'Habitación sencilla (1 cama King para 1 o 2 personas)',
+              'Habitación doble (2 camas matrimoniales para 1 hasta 4 personas)'
+            ]}
           />
         </BoardCard>
         <BoardCard barSide="right">
@@ -123,56 +130,20 @@ const Hotel: NextPage = () => {
             dprice="1,517,50 MXN"
             tprice="1,993.50 MXN"
             cprice="2,469.50 MXN"
-            rprice="1,800.00 MXN"
             time={[
-              'ITESO: Caminando, 5 minutos.',
+              'ITESO: Caminando, 15 minutos.',
               'Holiday Inn Express Guadalajara ITESO: Caminando, 8 - 10 minutos.',
               'Aeropuerto Guadalajara: Coche, 15 – 30 minutos.'
             ]}
-            reservationNumber="33 15 98 0000 ext. 807"
+            reservationNumber="+52 1 33 2353 5578"
             contactInfo={['+52 1 33 3577 7244']}
             optionalTitle="Recepción"
             evento="ITO"
             wid={false}
-          />
-        </BoardCard>
-        <BoardCard barSide="left">
-          <HotelCard
-            name={'Hampton by Hilton Guadalajara Expo'}
-            image={'/assets/hampton_inn_by_hilton_gdlexpo.jpg'}
-            benefits={[
-              'Desayuno americano tipo buffet.',
-              'Gimnasio',
-              'Estacionamiento techado',
-              'Llamadas locales y 01 800 nacionales',
-              'Internet inalámbrico y de alta velocidad en la habitación y áreas del hotel.',
-              'Estacionamiento en cortesía para huéspedes',
-              'Kit de café y té en cortesía en la habitación por noche.',
-              '1 Botella con agua en cortesía en la habitación por noche',
-              'Propina'
+            cuadrup={[
+              'Habitación sencilla (cama matrimonial para 1 o 2 personas)',
+              'Habitación doble (4 camas individuales para 1 hasta 4 personas)'
             ]}
-            hotelLink={
-              'https://www.hiltonhotels.com/es_XM/mexico/hampton-inn-by-hilton-guadalajara-expo/'
-            }
-            dprice="1,517,50 MXN"
-            tprice="1,993.50 MXN"
-            cprice="2,469.50 MXN"
-            time={[
-              'ITESO: Coche, 15 – 20 minutos.',
-              'Aeropuerto Guadalajara: Coche, 30 – 35 minutos.'
-            ]}
-            reservationNumber="33 15 98 0000 ext. 807"
-            contactInfo={[
-              'Bibiana Pérez',
-              'perez@inverhoteles.com',
-              '+52 1 33 1598 9000'
-            ]}
-            optionalTitle="Datos de contacto"
-            reservationLink={
-              'https://www.hilton.com/es/book/reservation/deeplink/?ctyhocn=GDLEXHX&groupCode=CHHITO&arrivaldate=2023-03-16&departuredate=2023-03-18&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT'
-            }
-            evento="ITO"
-            wid={false}
           />
         </BoardCard>
         <BoardCard barSide="right">
@@ -186,7 +157,9 @@ const Hotel: NextPage = () => {
               'Estacionamiento de cortesia',
               'Propina'
             ]}
-            hotelLink={'https://tuespaciodevida.livup.mx/'}
+            hotelLink={
+              'https://www.wyndhamhotels.com/wyndham-garden/guadalajara-mexico/wyndham-garden-guadalajara-expo/rooms-rates?hotel_id=48891 '
+            }
             dprice="1,136,70 MXN"
             tprice="1,362.80 MXN"
             cprice="1,588.90 MXN"
@@ -201,6 +174,10 @@ const Hotel: NextPage = () => {
             optionalTitle="Reservaciones para SEGMENTO ABIERTO ACM // ITESO MARZO 2023:"
             wid={true}
             evento="ACM CONCURSO / ITESO"
+            cuadrup={[
+              'Habitación sencilla (Habitación Estándar 1 camas)',
+              'Habitación doble, triple, cuádruple (Habitación Estándar 2 camas)'
+            ]}
           />
         </BoardCard>
       </TextCascadeBoard>
