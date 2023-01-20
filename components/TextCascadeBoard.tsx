@@ -17,6 +17,7 @@ interface Props {
   title: string
   menu: string[]
   turnOffStickyMenu?: boolean
+  intro?: string
 }
 
 const TextCascadeBoard: React.FC<Props> = (props: Props) => {
@@ -126,6 +127,13 @@ const TextCascadeBoard: React.FC<Props> = (props: Props) => {
             justifyContent: 'center'
           }}
         >
+          {props.intro !== undefined && (
+            <BoardCard barSide="none">
+              <Typography variant="body1" color={'text.secondary'}>
+                {props.intro}
+              </Typography>
+            </BoardCard>
+          )}
           {React.Children.map(
             React.Children.toArray(props.children),
             (child, index) => {

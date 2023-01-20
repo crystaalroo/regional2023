@@ -15,13 +15,6 @@ const Hotel: NextPage = () => {
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
       <TopBanner />
       <NavBar />
-      <BoardCard barSide="left" sx={{ paddingTop: '15%', width: '100%' }}>
-        <Typography variant="body1" color={'text.secondary'}>
-          El grupo esta en formato de SEGMENTO ABIERTO. Esto quiere decir que no
-          existen habitaciones prereservadas para el evento. Les recomendamos
-          que inicien la reservación a la brevedad
-        </Typography>
-      </BoardCard>
       <TextCascadeBoard
         title="HOTELES"
         menu={[
@@ -29,6 +22,9 @@ const Hotel: NextPage = () => {
           'Hampton by Hilton Guadalajara Expo',
           'livUp'
         ]}
+        intro="El grupo esta en formato de SEGMENTO ABIERTO. Esto quiere decir que
+        no existen habitaciones prereservadas para el evento. Les
+        recomendamos que inicien la reservación a la brevedad"
       >
         <BoardCard barSide="right">
           <HotelCard
