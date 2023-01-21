@@ -132,13 +132,6 @@ const HotelCard: React.FC<Props> = ({
                     </Item>
                   )
                 })}
-                <Item key="okc" sx={{ display: 'list-item' }}>
-                  Habitación sencilla (1 cama King para 1 o 2 personas)
-                </Item>
-                <Item key="okc" sx={{ display: 'list-item' }}>
-                  Habitación doble (2 camas matrimoniales para 1 hasta 4
-                  personas)
-                </Item>
               </List>
             </Item>
           </List>
