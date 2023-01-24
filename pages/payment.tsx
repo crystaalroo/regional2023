@@ -145,6 +145,17 @@ const Payment: NextPage = () => {
               ENTRENADOR.
             </Item>
             <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
+              De igual manera si tiene más de un rol en el evento, ej.: si es
+              ENTRENADOR de un equipo y además es DIRECTOR DE SEDE solo deberá
+              pagar una vez, considerando la tarifa más económica. En el ejemplo
+              debería pagar solo UNA VEZ en el rol de ENTRENADOR, sin embargo,
+              podría participar en la reunión de DIRECTORES DE SEDE, por lo
+              tanto, debería confirmar su participación y comentar en el correo
+              de confirmación que ya ha pagado como ENTRENADOR. Es importante
+              que esto sería verificado y la referencia es como esté la
+              información registrada en el ICPC Website.
+            </Item>
+            <Item sx={{ textAlign: 'justify', display: 'list-item' }}>
               Recomendamos que se haga un pago por TODO EL EQUIPO, sumando lo
               correspondiente a cada integrante.
             </Item>
