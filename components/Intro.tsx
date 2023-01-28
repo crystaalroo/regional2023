@@ -47,7 +47,7 @@ const Intro: React.FC = () => {
           }}
         />
         <Typography variant="body1" component="div" color={'text.secondary'}>
-          La ICPC organiza el concurso de programacion algoritmica para
+          La ICPC organiza el concurso de programación algorítmica para
           universitarios, en equipos de tres, en representación de su
           universidad, trabajan para resolver la mayoría de los problemas del
           mundo real, fomentando la colaboración, la creatividad, la innovación
