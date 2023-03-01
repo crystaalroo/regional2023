@@ -28,7 +28,7 @@ const Host: React.FC = () => {
       >
         SEDE Y ORGANIZADORES
       </Typography>
-      <Link key="home" href="/">
+      <Link key="site" href="/">
         <Box
           component="img"
           sx={{

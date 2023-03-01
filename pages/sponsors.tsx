@@ -36,7 +36,8 @@ const Sponsor: NextPage = () => {
           <Benefits
             name="Oro"
             per="100%"
-            image="/assets/icpcmx.png"
+            image="/assets/cignuzb.png"
+            link="https://cignuz.com/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
@@ -57,7 +58,8 @@ const Sponsor: NextPage = () => {
           <Benefits
             name="Plata"
             per="88%"
-            image="/assets/icpcmx.png"
+            image="/assets/edu.png"
+            link="https://www.solucionesenedu.com"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
@@ -78,7 +80,8 @@ const Sponsor: NextPage = () => {
           <Benefits
             name="Bronce"
             per="76%"
-            image="/assets/icpcmx.png"
+            image="/assets/tecM.png"
+            link="https://www.digitalonus.com/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
@@ -98,6 +101,7 @@ const Sponsor: NextPage = () => {
             name="Aliados"
             per="64%"
             image="/assets/icpcmx.png"
+            link="https://iteso.mx/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA'

@@ -131,7 +131,7 @@ const Statistics: React.FC = () => {
       }}
     >
       {imagesI.map(image => (
-        <Link key="home" href={image.link}>
+        <Link key={image.title} href={image.link}>
           <ImageButton
             focusRipple
             key={image.title}

@@ -9,7 +9,8 @@ import {
   ListItem,
   Paper,
   Stack,
-  styled
+  styled,
+  Link as ExternalLink
 } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
@@ -17,6 +18,7 @@ export interface Props {
   name: string
   per: string
   image: string
+  link: string
   benefits?: string[]
   stand?: string[]
   staff?: string[]
@@ -32,6 +34,7 @@ const Benefits: React.FC<Props> = ({
   name,
   per,
   image,
+  link,
   benefits,
   stand,
   staff
@@ -62,23 +65,30 @@ const Benefits: React.FC<Props> = ({
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
-          width: '50%',
+          width: { sm: '50%', xs: '100%' },
           alignItems: 'center',
           justifyContent: 'center'
         }}
       >
-        <Box
-          component="img"
-          sx={{
-            width: per,
-            height: '150px',
-            padding: { sm: '0 12%', xs: '0 20%' },
-            objectFit: 'contain',
-            display: 'flex'
-          }}
-          src={image}
-          alt="icpcmx"
-        />
+        <ExternalLink
+          key="cignuz"
+          href={link}
+          target={'blank'}
+          sx={{ width: '100%' }}
+        >
+          <Box
+            component="img"
+            sx={{
+              width: per,
+              height: '150px',
+              padding: { sm: '0 12%', xs: '0 20%' },
+              objectFit: 'contain',
+              display: 'flex'
+            }}
+            src={image}
+            alt="icpcmx"
+          />
+        </ExternalLink>
       </Box>
       <Accordion sx={{ backgroundColor: 'secondary.main', width: '100%' }}>
         <AccordionSummary

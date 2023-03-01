@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           alignItems: 'center'
         }}
       >
-        <Link key="home" href="/">
+        <Link key="homepage" href="/">
           <Box
             component="img"
             sx={{

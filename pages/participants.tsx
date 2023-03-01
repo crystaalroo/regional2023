@@ -21,7 +21,6 @@ const Participants: NextPage<Props> = ({ dataByUniversity }) => {
   universities.push(
     universities.splice(universities.indexOf('Invitados'), 1)[0]
   )
-  console.debug(universities)
   return (
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
       <TopBanner />

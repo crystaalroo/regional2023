@@ -6,7 +6,6 @@ import type { NextPage } from 'next'
 import BoardCard from '../components/BoardCard'
 import TextCascadeBoard from '../components/TextCascadeBoard'
 import HotelCard from '../components/HotelCard'
-import { Typography } from '@mui/material'
 
 // ********************************************************************************
 
