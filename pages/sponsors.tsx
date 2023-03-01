@@ -58,8 +58,8 @@ const Sponsor: NextPage = () => {
           <Benefits
             name="Plata"
             per="88%"
-            image="/assets/edu.png"
-            link="https://www.solucionesenedu.com"
+            image="/assets/icpcmx.png"
+            link="https://iteso.mx/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
@@ -100,8 +100,8 @@ const Sponsor: NextPage = () => {
           <Benefits
             name="Aliados"
             per="64%"
-            image="/assets/icpcmx.png"
-            link="https://iteso.mx/"
+            image="/assets/edu.png"
+            link="https://www.solucionesenedu.com"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA'
