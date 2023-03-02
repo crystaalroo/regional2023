@@ -58,7 +58,7 @@ export const AgendaTable: React.FC<Props> = ({ Rows }) => {
           <TableHead>
             <TableRow>
               {titles.map(title => (
-                <StyledTableCell key={title}>
+                <StyledTableCell key={title} align="center">
                   <Typography variant="subtitle2">{title}</Typography>
                 </StyledTableCell>
               ))}
