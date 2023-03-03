@@ -107,7 +107,7 @@ const Benefits: React.FC<Props> = ({
         </AccordionSummary>
         <AccordionDetails>
           <Stack
-            direction="row"
+            direction={{ xs: 'column', sm: 'row' }}
             spacing={2}
             sx={{
               backgroundColor: 'inherit'
@@ -127,7 +127,7 @@ const Benefits: React.FC<Props> = ({
             <Item>
               {stand !== undefined && (
                 <Box>
-                  STAND EN ESPACIO DE EXHIBICIÓN:
+                  <Typography>STAND EN ESPACIO DE EXHIBICIÓN:</Typography>
                   <List sx={{ listStyleType: 'disc' }}>
                     {stand?.map(ben => {
                       return (
@@ -139,7 +139,7 @@ const Benefits: React.FC<Props> = ({
                   </List>
                 </Box>
               )}
-              ACCESOS INCLUIDOS:
+              <Typography>ACCESOS INCLUIDOS:</Typography>
               <List sx={{ listStyleType: 'disc' }}>
                 {staff?.map(ben => {
                   return (

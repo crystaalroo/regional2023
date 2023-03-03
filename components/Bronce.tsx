@@ -104,9 +104,7 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
       <Accordion
         sx={{
           backgroundColor: 'secondary.main',
-          width: '100%',
-          flexWrap: 'wrap',
-          display: 'flex'
+          width: '100%'
         }}
       >
         <AccordionSummary
@@ -118,7 +116,7 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Stack
-            direction="row"
+            direction={{ xs: 'column', sm: 'row' }}
             spacing={2}
             sx={{
               backgroundColor: 'inherit'
