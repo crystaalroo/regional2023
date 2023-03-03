@@ -70,8 +70,8 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
             component="img"
             sx={{
               width: per,
-              height: '300px',
-              padding: { sm: '0 15%', xs: '0 20%' },
+              height: '450px',
+              padding: { sm: '0 10%', xs: '0 15%' },
               objectFit: 'contain',
               display: 'flex'
             }}
