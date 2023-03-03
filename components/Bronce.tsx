@@ -17,8 +17,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 export interface Props {
   name: string
   per: string
-  image: string
-  link: string
   benefits?: string[]
   stand?: string[]
   staff?: string[]
@@ -30,15 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary
 }))
-const Benefits: React.FC<Props> = ({
-  name,
-  per,
-  image,
-  link,
-  benefits,
-  stand,
-  staff
-}) => {
+const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
   return (
     <Box
       sx={{
@@ -67,12 +57,13 @@ const Benefits: React.FC<Props> = ({
           flexWrap: 'wrap',
           width: { sm: '50%', xs: '100%' },
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          flexDirection: 'column'
         }}
       >
         <ExternalLink
-          key="cignuz"
-          href={link}
+          key="tecm"
+          href="https://www.digitalonus.com/"
           target={'blank'}
           sx={{ width: '100%' }}
         >
@@ -85,7 +76,27 @@ const Benefits: React.FC<Props> = ({
               objectFit: 'contain',
               display: 'flex'
             }}
-            src={image}
+            src="/assets/tecM.png"
+            alt="icpcmx"
+          />
+        </ExternalLink>
+
+        <ExternalLink
+          key="grid"
+          href="https://www.griddynamics.com/"
+          target={'blank'}
+          sx={{ width: '100%' }}
+        >
+          <Box
+            component="img"
+            sx={{
+              width: per,
+              height: '150px',
+              padding: { sm: '0 15%', xs: '0 20%' },
+              objectFit: 'contain',
+              display: 'flex'
+            }}
+            src="/assets/grid.png"
             alt="icpcmx"
           />
         </ExternalLink>
@@ -127,7 +138,7 @@ const Benefits: React.FC<Props> = ({
             <Item>
               {stand !== undefined && (
                 <Box>
-                  STAND EN ESPACIO DE EXHIBICIÓN:
+                  <Typography>STAND EN ESPACIO DE EXHIBICIÓN:</Typography>
                   <List sx={{ listStyleType: 'disc' }}>
                     {stand?.map(ben => {
                       return (
@@ -139,7 +150,7 @@ const Benefits: React.FC<Props> = ({
                   </List>
                 </Box>
               )}
-              ACCESOS INCLUIDOS:
+              <Typography>ACCESOS INCLUIDOS:</Typography>
               <List sx={{ listStyleType: 'disc' }}>
                 {staff?.map(ben => {
                   return (
@@ -157,4 +168,4 @@ const Benefits: React.FC<Props> = ({
   )
 }
 
-export default Benefits
+export default Bronce

@@ -6,6 +6,8 @@ import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import BoardCard from '../components/BoardCard'
 import Benefits from '../components/Benefits'
+import Diamond from '../components/Diamond'
+import Bronce from '../components/Bronce'
 import { Typography } from '@mui/material'
 
 // ********************************************************************************
@@ -33,9 +35,28 @@ const Sponsor: NextPage = () => {
           </Typography>
         </BoardCard>
         <BoardCard barSide="none">
+          <Diamond
+            name="Diamante"
+            per="100%"
+            image="assets/sponsor-diamond-multi-regional-huawei-68.png"
+            link="https://www.huawei.com/mx/"
+            benefits={[
+              'Sitio web regional presencia de logo en encabezado y cuando corresponda, enlace activo al sitio web del patrocinador',
+              'Logotipo en portada del conjunto de problemas',
+              'Logotipos en pancartas de eventos',
+              'Participación en ceremonia de inauguración, clausura y entrega de premios',
+              'Videos promocionales de patrocinadores durante la apertura y el cierre',
+              'Presentación de 30 minutos.',
+              'Representantes del patrocinador en el escenario para la ceremonia de clausura, foto con los ganadores',
+              'Hasta 2 mensajes en redes sociales aprobados por el patrocinador, incluidas oportunidades de trabajo y pasantías',
+              'Mesa preferencial en espacio de patrocinador'
+            ]}
+          />
+        </BoardCard>
+        <BoardCard barSide="none">
           <Benefits
             name="Oro"
-            per="100%"
+            per="90%"
             image="/assets/cignuzb.png"
             link="https://cignuz.com/"
             benefits={[
@@ -57,9 +78,9 @@ const Sponsor: NextPage = () => {
         <BoardCard barSide="none">
           <Benefits
             name="Plata"
-            per="88%"
-            image="/assets/icpcmx.png"
-            link="https://iteso.mx/"
+            per="80%"
+            image="/assets/oracle.png"
+            link="https://www.oracle.com/mx/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
@@ -77,9 +98,9 @@ const Sponsor: NextPage = () => {
           />
         </BoardCard>
         <BoardCard barSide="none">
-          <Benefits
+          <Bronce
             name="Bronce"
-            per="76%"
+            per="70%"
             image="/assets/tecM.png"
             link="https://www.digitalonus.com/"
             benefits={[
@@ -99,7 +120,7 @@ const Sponsor: NextPage = () => {
         <BoardCard barSide="none">
           <Benefits
             name="Aliados"
-            per="64%"
+            per="60%"
             image="/assets/edu.png"
             link="https://www.solucionesenedu.com"
             benefits={[

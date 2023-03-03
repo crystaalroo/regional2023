@@ -20,8 +20,6 @@ export interface Props {
   image: string
   link: string
   benefits?: string[]
-  stand?: string[]
-  staff?: string[]
 }
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: 'inherit',
@@ -30,15 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary
 }))
-const Benefits: React.FC<Props> = ({
-  name,
-  per,
-  image,
-  link,
-  benefits,
-  stand,
-  staff
-}) => {
+const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
   return (
     <Box
       sx={{
@@ -80,7 +70,7 @@ const Benefits: React.FC<Props> = ({
             component="img"
             sx={{
               width: per,
-              height: '150px',
+              height: '300px',
               padding: { sm: '0 15%', xs: '0 20%' },
               objectFit: 'contain',
               display: 'flex'
@@ -90,14 +80,7 @@ const Benefits: React.FC<Props> = ({
           />
         </ExternalLink>
       </Box>
-      <Accordion
-        sx={{
-          backgroundColor: 'secondary.main',
-          width: '100%',
-          flexWrap: 'wrap',
-          display: 'flex'
-        }}
-      >
+      <Accordion sx={{ backgroundColor: 'secondary.main', width: '100%' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ fill: 'white' }} />}
           aria-controls="panel1a-content"
@@ -124,32 +107,6 @@ const Benefits: React.FC<Props> = ({
                 })}
               </List>
             </Item>
-            <Item>
-              {stand !== undefined && (
-                <Box>
-                  STAND EN ESPACIO DE EXHIBICIÓN:
-                  <List sx={{ listStyleType: 'disc' }}>
-                    {stand?.map(ben => {
-                      return (
-                        <ListItem sx={{ display: 'list-item' }} key="ite">
-                          {ben}
-                        </ListItem>
-                      )
-                    })}
-                  </List>
-                </Box>
-              )}
-              ACCESOS INCLUIDOS:
-              <List sx={{ listStyleType: 'disc' }}>
-                {staff?.map(ben => {
-                  return (
-                    <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
-                    </ListItem>
-                  )
-                })}
-              </List>
-            </Item>
           </Stack>
         </AccordionDetails>
       </Accordion>
@@ -157,4 +114,4 @@ const Benefits: React.FC<Props> = ({
   )
 }
 
-export default Benefits
+export default Diamond
