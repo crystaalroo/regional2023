@@ -101,8 +101,6 @@ const Sponsor: NextPage = () => {
           <Bronce
             name="Bronce"
             per="70%"
-            image="/assets/tecM.png"
-            link="https://www.digitalonus.com/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
