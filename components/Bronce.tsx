@@ -83,7 +83,7 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
 
         <ExternalLink
           key="grid"
-          href="https://www.griddynamics.com/"
+          href="https://careers.griddynamics.com"
           target={'blank'}
           sx={{ width: '100%' }}
         >
@@ -96,7 +96,7 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
               objectFit: 'contain',
               display: 'flex'
             }}
-            src="/assets/grid.png"
+            src="/assets/grids.png"
             alt="icpcmx"
           />
         </ExternalLink>
