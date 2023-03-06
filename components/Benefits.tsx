@@ -93,9 +93,7 @@ const Benefits: React.FC<Props> = ({
       <Accordion
         sx={{
           backgroundColor: 'secondary.main',
-          width: '100%',
-          flexWrap: 'wrap',
-          display: 'flex'
+          width: '100%'
         }}
       >
         <AccordionSummary

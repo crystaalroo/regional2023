@@ -38,7 +38,7 @@ const Sponsor: NextPage = () => {
           <Diamond
             name="Diamante"
             per="100%"
-            image="assets/huaweid.png"
+            image="assets/diamondhh.png"
             link="https://www.huawei.com/mx/"
             benefits={[
               'Sitio web regional presencia de logo en encabezado y cuando corresponda, enlace activo al sitio web del patrocinador',
