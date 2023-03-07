@@ -54,11 +54,9 @@ const Sponsor: NextPage = () => {
           />
         </BoardCard>
         <BoardCard barSide="none">
-          <Benefits
+          <Bronce
             name="Oro"
             per="90%"
-            image="/assets/cignuzb.png"
-            link="https://cignuz.com/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
@@ -73,28 +71,10 @@ const Sponsor: NextPage = () => {
               'PRESENCIA EN ESCENARIO PRINCIPAL Y BANNERS'
             ]}
             staff={['3 ACCESOS PARA STAFF', '2 ACCESOS PARA EJECUTIVOS']}
-          />
-        </BoardCard>
-        <BoardCard barSide="none">
-          <Benefits
-            name="Plata"
-            per="80%"
-            image="/assets/oracle.png"
-            link="https://www.oracle.com/mx/"
-            benefits={[
-              'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
-              'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
-              'PRESENCIA EN VIDEOS EN CEREMONIAS DE APERTURA Y CIERRE',
-              'PLAYERA OFICIAL DEL EVENTO',
-              'PARTICIPACIÓN EN CEREMONIA DE PREMIACIÓN, CON ENTREGA DE PREMIO A TERCER LUGAR DEL CONCURSO REGIONAL',
-              'CONFERENCIA DE PATROCINADOR. TIEMPO: 15 MIN'
-            ]}
-            stand={[
-              'TAMAÑO DE STAND: 2 M X 2 M. ESTRUCTURA NO INCLUIDA',
-              'SEÑALIZACIÓN DEL ÁREA DE EVENTOS Y ROLL-UPS DE EVENTOS O MURO DE PRENSA',
-              'PRESENCIA EN ESCENARIO PRINCIPAL Y BANNERS'
-            ]}
-            staff={['2 ACCESOS PARA STAFF', '1 ACCESOS PARA EJECUTIVOS']}
+            image1="/assets/cignuzb.png"
+            link1="https://cignuz.com/"
+            image2="/assets/oracle.png"
+            link2="https://www.oracle.com/mx/"
           />
         </BoardCard>
         <BoardCard barSide="none">
@@ -113,6 +93,10 @@ const Sponsor: NextPage = () => {
               'PRESENCIA EN ESCENARIO PRINCIPAL Y BANNERS'
             ]}
             staff={['1 ACCESOS PARA STAFF', '1 ACCESOS PARA EJECUTIVOS']}
+            image1="/assets/tecM.png"
+            link1="https://www.digitalonus.com/"
+            image2="/assets/grids.png"
+            link2="https://careers.griddynamics.com"
           />
         </BoardCard>
         <BoardCard barSide="none">

@@ -20,6 +20,10 @@ export interface Props {
   benefits?: string[]
   stand?: string[]
   staff?: string[]
+  link1: string
+  image1: string
+  link2: string
+  image2: string
 }
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: 'inherit',
@@ -28,7 +32,17 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary
 }))
-const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
+const Bronce: React.FC<Props> = ({
+  name,
+  per,
+  benefits,
+  stand,
+  staff,
+  link1,
+  image1,
+  link2,
+  image2
+}) => {
   return (
     <Box
       sx={{
@@ -63,7 +77,7 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
       >
         <ExternalLink
           key="tecm"
-          href="https://www.digitalonus.com/"
+          href={link1}
           target={'blank'}
           sx={{ width: '100%' }}
         >
@@ -76,14 +90,14 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
               objectFit: 'contain',
               display: 'flex'
             }}
-            src="/assets/tecM.png"
+            src={image1}
             alt="icpcmx"
           />
         </ExternalLink>
 
         <ExternalLink
           key="grid"
-          href="https://careers.griddynamics.com"
+          href={link2}
           target={'blank'}
           sx={{ width: '100%' }}
         >
@@ -96,7 +110,7 @@ const Bronce: React.FC<Props> = ({ name, per, benefits, stand, staff }) => {
               objectFit: 'contain',
               display: 'flex'
             }}
-            src="/assets/grids.png"
+            src={image2}
             alt="icpcmx"
           />
         </ExternalLink>
