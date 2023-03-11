@@ -53,7 +53,7 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
             align="center"
             color={'primary.contrastText'}
           >
-            Conferencias: 17 de Marzo de 2023
+            Charlas: 17 de Marzo de 2023
           </Typography>
         </BoardCard>
         <BoardCard
