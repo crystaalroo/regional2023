@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 import { Box, Typography } from '@mui/material'
+import YouTubeIcon from '@mui/icons-material/YouTube'
 
 const titles = [
   'Inicio (Local)',
@@ -84,6 +85,10 @@ export const AgendaTable: React.FC<Props> = ({ Rows }) => {
                 </StyledTableCell>
                 <StyledTableCell align="center">
                   <Typography variant="body2">{row.r6}</Typography>
+                  {(row.r6 == 'Auditorio M, ITESO' ||
+                    row.r6 == 'Auditorio M') && (
+                    <YouTubeIcon style={{ color: 'red' }} />
+                  )}
                 </StyledTableCell>
                 <StyledTableCell align="center">
                   <Typography variant="body2">{row.r7}</Typography>
