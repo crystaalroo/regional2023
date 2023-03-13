@@ -95,7 +95,7 @@ const Sponsor: NextPage = () => {
             staff={['1 ACCESOS PARA STAFF', '1 ACCESOS PARA EJECUTIVOS']}
             image1="/assets/tecM.png"
             link1="https://www.digitalonus.com/"
-            image2="/assets/gdwhite.png"
+            image2="/assets/GDwhite.png"
             link2="https://careers.griddynamics.com"
           />
         </BoardCard>
