@@ -85,8 +85,8 @@ export const AgendaTable: React.FC<Props> = ({ Rows }) => {
                 </StyledTableCell>
                 <StyledTableCell align="center">
                   <Typography variant="body2">{row.r6}</Typography>
-                  {(row.r6 == 'Auditorio M, ITESO' ||
-                    row.r6 == 'Auditorio M') && (
+                  {(row.r6 === 'Auditorio M, ITESO' ||
+                    row.r6 === 'Auditorio M') && (
                     <YouTubeIcon style={{ color: 'red' }} />
                   )}
                 </StyledTableCell>
