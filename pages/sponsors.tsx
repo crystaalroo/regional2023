@@ -100,11 +100,13 @@ const Sponsor: NextPage = () => {
           />
         </BoardCard>
         <BoardCard barSide="none">
-          <Benefits
+          <Bronce
             name="Aliados"
             per="60%"
-            image="/assets/edu.png"
-            link="https://www.solucionesenedu.com"
+            image1="/assets/edu.png"
+            link1="https://www.solucionesenedu.com"
+            image2="/assets/omegab.png"
+            link2="https://omegaup.com/"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA'
