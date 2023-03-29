@@ -39,7 +39,8 @@ const Hotel: NextPage = () => {
               'Estacionamiento en cortesía para huéspedes',
               'Kit de café y té en cortesía en la habitación por noche.',
               '1 Botella con agua en cortesía en la habitación por noche',
-              'Propina'
+              'Propina',
+              'Impuestos'
             ]}
             hotelLink="https://www.ihg.com/holidayinnexpress/hotels/us/es/guadalajara/gdlit/hoteldetail"
             dprice="1,517,50 MXN"
@@ -79,7 +80,8 @@ const Hotel: NextPage = () => {
               'Estacionamiento en cortesía para huéspedes',
               'Kit de café y té en cortesía en la habitación por noche.',
               '1 Botella con agua en cortesía en la habitación por noche',
-              'Propina'
+              'Propina',
+              'Impuestos'
             ]}
             hotelLink={
               'https://www.hiltonhotels.com/es_XM/mexico/hampton-inn-by-hilton-guadalajara-expo/'
@@ -123,7 +125,8 @@ const Hotel: NextPage = () => {
               'Cancha de usos múltiples',
               'Área de estudio',
               'Recepción y resguardo de paquetes',
-              'Propina'
+              'Propina',
+              'Impuestos'
             ]}
             hotelLink={'https://tuespaciodevida.livup.mx/'}
             dprice="1,517,50 MXN"
@@ -154,7 +157,8 @@ const Hotel: NextPage = () => {
               'Impuestos',
               'Internet inalambrico',
               'Estacionamiento de cortesia',
-              'Propina'
+              'Propina',
+              'Impuestos'
             ]}
             hotelLink={
               'https://www.wyndhamhotels.com/wyndham-garden/guadalajara-mexico/wyndham-garden-guadalajara-expo/rooms-rates?hotel_id=48891 '

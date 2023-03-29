@@ -11,6 +11,11 @@ const imagesE = [
     url: '/assets/mapaiteso.jpg',
     title: 'Mapa ITESO',
     link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
+  },
+  {
+    url: '/assets/event2.jpg',
+    title: 'Fotos del evento',
+    link: 'https://www.flickr.com/photos/tcmxicpc/albums'
   }
 ]
 
