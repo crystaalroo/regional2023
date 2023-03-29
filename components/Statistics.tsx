@@ -13,7 +13,7 @@ const imagesE = [
     link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
   },
   {
-    url: '/assets/event2.jpg',
+    url: '/assets/event2.JPG',
     title: 'Fotos del evento',
     link: 'https://www.flickr.com/photos/tcmxicpc/albums'
   }
@@ -170,7 +170,7 @@ const Statistics: React.FC = () => {
       {imagesE.map(image => (
         <ExternalLink
           key="Sede"
-          href="https://www.iteso.mx/documents/2624322/0/Mapa+del+campus"
+          href={image.link}
           sx={{
             width: { sm: '48%', xs: '100%' },
             margin: { sm: '1%', xs: 'none' }
