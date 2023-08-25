@@ -15,9 +15,8 @@ import path from 'path'
 interface Props {
   agenda17: RowData[]
   agenda18: RowData[]
-  agenda17c: RowData[]
 }
-const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
+const Agenda: NextPage<Props> = ({ agenda17, agenda18 }) => {
   return (
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
       <TopBanner />
@@ -32,7 +31,7 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
             align="center"
             color={'primary.contrastText'}
           >
-            Viernes: 17 de Marzo de 2023
+            Viernes: 20 de Octubre de 2023
           </Typography>
         </BoardCard>
         <BoardCard
@@ -53,28 +52,7 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18, agenda17c }) => {
             align="center"
             color={'primary.contrastText'}
           >
-            Charlas: 17 de Marzo de 2023
-          </Typography>
-        </BoardCard>
-        <BoardCard
-          barSide="none"
-          sx={{
-            width: '100%',
-            overflow: 'scroll',
-            alignItems: 'normal',
-            justifyContent: 'normal'
-          }}
-        >
-          <AgendaTable Rows={agenda17c} />
-        </BoardCard>
-        <BoardCard barSide="none" sx={{ padding: 0 }}>
-          <Typography
-            variant="h4"
-            component="div"
-            align="center"
-            color={'primary.contrastText'}
-          >
-            Sabado: 18 de Marzo de 2023
+            Sabado: 21 de Octubre de 2023
           </Typography>
         </BoardCard>
         <BoardCard
@@ -106,10 +84,7 @@ async function parseCSV(fileName: string): Promise<RowData[]> {
           r2: row[1],
           r3: row[2],
           r4: row[3],
-          r5: row[4],
-          r6: row[5],
-          r7: row[6],
-          r8: row[7]
+          r5: row[4]
         })
         // console.log(row)
       })
@@ -124,18 +99,9 @@ async function parseCSV(fileName: string): Promise<RowData[]> {
 export const getStaticProps: GetStaticProps<Props> = async () => {
   let rows17: RowData[] = []
   let rows18: RowData[] = []
-  let rows17c: RowData[] = []
   await parseCSV('./public/agenda17.csv')
     .then((parsedRows: RowData[]) => {
       rows17 = parsedRows
-      // console.log(rows17)
-    })
-    .catch((error: Error) => {
-      console.error(error)
-    })
-  await parseCSV('./public/agenda17c.csv')
-    .then((parsedRows: RowData[]) => {
-      rows17c = parsedRows
       // console.log(rows17)
     })
     .catch((error: Error) => {
@@ -149,7 +115,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     .catch((error: Error) => {
       console.error(error)
     })
-  return { props: { agenda17: rows17, agenda18: rows18, agenda17c: rows17c } }
+  return { props: { agenda17: rows17, agenda18: rows18 } }
 }
 
 export default Agenda

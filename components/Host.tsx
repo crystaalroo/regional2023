@@ -44,7 +44,7 @@ const Host: React.FC = () => {
       </Link>
       <ExternalLink
         key="Sede"
-        href="https://iteso.mx/"
+        href="https://tec.mx/es/guadalajara"
         target={'blank'}
         sx={{ width: { sm: '50%', xs: '100%' } }}
       >
@@ -57,7 +57,7 @@ const Host: React.FC = () => {
             objectFit: 'contain',
             display: 'flex'
           }}
-          src="/assets/iteso-vertical.png"
+          src="/assets/tecblanco.png"
           alt="icpcmx"
         />
       </ExternalLink>

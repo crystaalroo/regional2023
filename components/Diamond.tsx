@@ -20,6 +20,8 @@ export interface Props {
   image: string
   link: string
   benefits?: string[]
+  stand?: string[]
+  staff?: string[]
 }
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: 'inherit',
@@ -28,7 +30,15 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary
 }))
-const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
+const Diamond: React.FC<Props> = ({
+  name,
+  per,
+  image,
+  link,
+  benefits,
+  stand,
+  staff
+}) => {
   return (
     <Box
       sx={{
@@ -70,10 +80,10 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
             component="img"
             sx={{
               width: per,
-              height: '450px',
-              padding: { sm: '0 10%', xs: '0 15%' },
+              height: { sm: '450px', xs: '300px' },
+              padding: { sm: '0 10%', xs: '0 10%' },
               objectFit: 'contain',
-              display: 'flex'
+              alignProperty: 'center'
             }}
             src={image}
             alt="icpcmx"
@@ -90,7 +100,7 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
         </AccordionSummary>
         <AccordionDetails>
           <Stack
-            direction="row"
+            direction={{ xs: 'column', sm: 'row' }}
             spacing={2}
             sx={{
               backgroundColor: 'inherit'
@@ -100,8 +110,39 @@ const Diamond: React.FC<Props> = ({ name, per, image, link, benefits }) => {
               <List sx={{ listStyleType: 'disc' }}>
                 {benefits?.map(ben => {
                   return (
+                    <ListItem
+                      sx={{ display: 'list-item', color: 'white' }}
+                      key="ite"
+                    >
+                      <Typography sx={{ color: 'white' }}>{ben}</Typography>
+                    </ListItem>
+                  )
+                })}
+              </List>
+            </Item>
+            <Item>
+              {stand !== undefined && (
+                <Box>
+                  <Typography>STAND EN ESPACIO DE EXHIBICIÓN:</Typography>
+                  <List sx={{ listStyleType: 'disc', color: 'white' }}>
+                    {stand?.map(ben => {
+                      return (
+                        <ListItem sx={{ display: 'list-item' }} key="ite">
+                          <Typography sx={{ color: 'white' }}>{ben}</Typography>
+                        </ListItem>
+                      )
+                    })}
+                  </List>
+                </Box>
+              )}
+              <Typography sx={{ color: 'white' }}>
+                ACCESOS INCLUIDOS:
+              </Typography>
+              <List sx={{ listStyleType: 'disc', color: 'white' }}>
+                {staff?.map(ben => {
+                  return (
                     <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
+                      <Typography sx={{ color: 'white' }}>{ben}</Typography>
                     </ListItem>
                   )
                 })}

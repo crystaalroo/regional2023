@@ -16,7 +16,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 export interface Props {
   name: string
-  per: string
+  per1: string
+  per2: string
   benefits?: string[]
   stand?: string[]
   staff?: string[]
@@ -34,7 +35,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }))
 const Bronce: React.FC<Props> = ({
   name,
-  per,
+  per1,
+  per2,
   benefits,
   stand,
   staff,
@@ -72,20 +74,20 @@ const Bronce: React.FC<Props> = ({
           width: { sm: '50%', xs: '100%' },
           alignItems: 'center',
           justifyContent: 'center',
-          flexDirection: 'column'
+          flexDirection: 'row'
         }}
       >
         <ExternalLink
           key="tecm"
           href={link1}
           target={'blank'}
-          sx={{ width: '100%' }}
+          sx={{ width: '50%' }}
         >
           <Box
             component="img"
             sx={{
-              width: per,
-              height: '150px',
+              width: per1,
+              height: '300px',
               padding: { sm: '0 15%', xs: '0 20%' },
               objectFit: 'contain',
               display: 'flex'
@@ -99,13 +101,13 @@ const Bronce: React.FC<Props> = ({
           key="grid"
           href={link2}
           target={'blank'}
-          sx={{ width: '100%' }}
+          sx={{ width: '50%' }}
         >
           <Box
             component="img"
             sx={{
-              width: per,
-              height: '150px',
+              width: per2,
+              height: '300px',
               padding: { sm: '0 15%', xs: '0 20%' },
               objectFit: 'contain',
               display: 'flex'
@@ -140,8 +142,11 @@ const Bronce: React.FC<Props> = ({
               <List sx={{ listStyleType: 'disc' }}>
                 {benefits?.map(ben => {
                   return (
-                    <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
+                    <ListItem
+                      sx={{ display: 'list-item', color: 'white' }}
+                      key="ite"
+                    >
+                      <Typography sx={{ color: 'white' }}>{ben}</Typography>
                     </ListItem>
                   )
                 })}
@@ -150,24 +155,31 @@ const Bronce: React.FC<Props> = ({
             <Item>
               {stand !== undefined && (
                 <Box>
-                  <Typography>STAND EN ESPACIO DE EXHIBICIÓN:</Typography>
-                  <List sx={{ listStyleType: 'disc' }}>
+                  <Typography sx={{ color: 'white' }}>
+                    STAND EN ESPACIO DE EXHIBICIÓN:
+                  </Typography>
+                  <List sx={{ listStyleType: 'disc', color: 'white' }}>
                     {stand?.map(ben => {
                       return (
-                        <ListItem sx={{ display: 'list-item' }} key="ite">
-                          {ben}
+                        <ListItem
+                          sx={{ display: 'list-item', color: 'white' }}
+                          key="ite"
+                        >
+                          <Typography sx={{ color: 'white' }}>{ben}</Typography>
                         </ListItem>
                       )
                     })}
                   </List>
                 </Box>
               )}
-              <Typography>ACCESOS INCLUIDOS:</Typography>
+              <Typography sx={{ color: 'white' }}>
+                ACCESOS INCLUIDOS:
+              </Typography>
               <List sx={{ listStyleType: 'disc' }}>
                 {staff?.map(ben => {
                   return (
                     <ListItem sx={{ display: 'list-item' }} key="ite">
-                      {ben}
+                      <Typography sx={{ color: 'white' }}>{ben}</Typography>
                     </ListItem>
                   )
                 })}

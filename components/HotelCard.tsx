@@ -9,12 +9,8 @@ export interface Props {
   benefits: string[]
   hotelLink: string
   dprice: string
-  tprice: string
-  cprice: string
   time: string[]
   reservationNumber?: string
-  optionalTitle: string
-  contactInfo: string[]
   reservationLink?: string
   evento: string
   wid: boolean
@@ -46,12 +42,8 @@ const HotelCard: React.FC<Props> = ({
   benefits,
   hotelLink,
   dprice,
-  tprice,
-  cprice,
   time,
-  contactInfo,
   reservationNumber,
-  optionalTitle,
   reservationLink,
   wid,
   evento,
@@ -100,8 +92,7 @@ const HotelCard: React.FC<Props> = ({
           color: 'text.secondary'
         }}
       >
-        <Item>Clave del Evento: {evento}</Item>
-        {wid && <Item>Evento: Concurso Regional 2022 ICPC México</Item>}
+        <Item>Codigo de reservación: {evento}</Item>
         <Item>
           <Button variant="outlined" href={hotelLink} color="info">
             <Typography sx={{ color: 'text.secondary' }}>Hotel info</Typography>
@@ -115,24 +106,8 @@ const HotelCard: React.FC<Props> = ({
               padding: '3% 0 0 0'
             }}
           >
-            Precio Convenio ITESO + Grupo ITO
             <Item key="okd" sx={{ display: 'list-item' }}>
               Habitación Sencilla o Doble: <strong>{dprice} </strong>
-            </Item>
-            <Item key="okt" sx={{ display: 'list-item' }}>
-              Habitación Triple: <strong>{tprice} </strong>
-            </Item>
-            <Item key="okc" sx={{ display: 'list-item' }}>
-              Habitación Cuádruple: <strong>{cprice} </strong>
-              <List sx={{ listStyleType: 'square' }}>
-                {cuadrup.map(cua => {
-                  return (
-                    <Item key={cua} sx={{ display: 'list-item' }}>
-                      {cua}
-                    </Item>
-                  )
-                })}
-              </List>
             </Item>
           </List>
         </Item>
@@ -169,25 +144,6 @@ const HotelCard: React.FC<Props> = ({
               return (
                 <Item key={ti} sx={{ display: 'list-item' }}>
                   {ti}
-                </Item>
-              )
-            })}
-          </List>
-        </Item>
-        <Item>
-          <List
-            sx={{
-              listStyleType: 'disc',
-              padding: '3% 0 0 0',
-              color: 'text.secondary',
-              width: '100%'
-            }}
-          >
-            {optionalTitle}
-            {contactInfo.map(cf => {
-              return (
-                <Item key={cf} sx={{ display: 'list-item' }}>
-                  {cf}
                 </Item>
               )
             })}

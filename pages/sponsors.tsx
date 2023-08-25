@@ -5,7 +5,6 @@ import TopBanner from '../components/TopBanner'
 import type { NextPage } from 'next'
 import MainBoard from '../components/MainBoard'
 import BoardCard from '../components/BoardCard'
-import Benefits from '../components/Benefits'
 import Diamond from '../components/Diamond'
 import Bronce from '../components/Bronce'
 import { Typography } from '@mui/material'
@@ -35,51 +34,42 @@ const Sponsor: NextPage = () => {
           </Typography>
         </BoardCard>
         <BoardCard barSide="none">
-          <Diamond
-            name="Diamante"
-            per="100%"
-            image="assets/diamondhh.png"
-            link="https://www.huawei.com/mx/"
-            benefits={[
-              'Sitio web regional presencia de logo en encabezado y cuando corresponda, enlace activo al sitio web del patrocinador',
-              'Logotipo en portada del conjunto de problemas',
-              'Logotipos en pancartas de eventos',
-              'Participación en ceremonia de inauguración, clausura y entrega de premios',
-              'Videos promocionales de patrocinadores durante la apertura y el cierre',
-              'Presentación de 30 minutos.',
-              'Representantes del patrocinador en el escenario para la ceremonia de clausura, foto con los ganadores',
-              'Hasta 2 mensajes en redes sociales aprobados por el patrocinador, incluidas oportunidades de trabajo y pasantías',
-              'Mesa preferencial en espacio de patrocinador'
-            ]}
-          />
-        </BoardCard>
-        <BoardCard barSide="none">
           <Bronce
-            name="Oro"
-            per="90%"
+            name="Diamante"
+            per1="100%"
+            per2="100%"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
-              'PRESENCIA EN VIDEOS EN CEREMONIAS DE APERTURA Y CIERRE',
+              'PRESENCIA DURANTE EL CONCURSO, BRINDIS, CENA Y PASEO',
               'PLAYERA OFICIAL DEL EVENTO',
-              'PARTICIPACIÓN EN CEREMONIA DE PREMIACIÓN, CON ENTREGA DE PREMIO AL SEGUNDO LUGAR DEL CONCURSO REGIONAL',
-              'CONFERENCIA DE PATROCINADOR. TIEMPO: 30 MIN'
+              'MENCION COMO PATROCINADOR DEL BRINDIS Y DE LA CENA, CON POSIBILIDAD DE COMPARTIR UN MENSAJE EN ESTAS ACTIVIDADES'
             ]}
-            stand={[
-              'TAMAÑO DE STAND: 3 M X 3 M. ESTRUCTURA NO INCLUIDA',
-              'SEÑALIZACIÓN DEL ÁREA DE EVENTOS Y ROLL-UPS DE EVENTOS O MURO DE PRENSA',
-              'PRESENCIA EN ESCENARIO PRINCIPAL Y BANNERS'
-            ]}
-            staff={['3 ACCESOS PARA STAFF', '2 ACCESOS PARA EJECUTIVOS']}
-            image1="/assets/cignuzb.png"
-            link1="https://cignuz.com/"
-            image2="/assets/oracle.png"
-            link2="https://www.oracle.com/mx/"
+            staff={['5 ACCESOS PARA STAFF', '2 ACCESOS PARA EJECUTIVOS']}
+            image1="assets/huaweid.png"
+            link1="https://www.huawei.com/mx/"
+            image2="/assets/jetbrains.png"
+            link2="https://www.jetbrains.com/"
           />
         </BoardCard>
-        <BoardCard barSide="none">
+        {/* <BoardCard barSide="none">
+          <Diamond
+            name="Oro"
+            per="80%"
+            benefits={[
+              'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
+              'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
+              'PRESENCIA DURANTE EL CONCURSO, BRINDIS, CENA Y PASEO',
+              'PLAYERA OFICIAL DEL EVENTO'
+            ]}
+            staff={['2 ACCESOS PARA STAFF', '1 ACCESOS PARA EJECUTIVOS']}
+            image="/assets/cignuz.png"
+            link="https://cignuz.com/"
+          />
+        </BoardCard> */}
+        {/* <BoardCard barSide="none">
           <Bronce
-            name="Bronce"
+            name="Plata"
             per="70%"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
@@ -98,22 +88,23 @@ const Sponsor: NextPage = () => {
             image2="/assets/GDwhite.png"
             link2="https://careers.griddynamics.com"
           />
-        </BoardCard>
-        <BoardCard barSide="none">
+        </BoardCard> */}
+        {/* <BoardCard barSide="none">
           <Bronce
             name="Aliados"
-            per="60%"
+            per1="70%"
+            per2="50%"
             image1="/assets/edu.png"
             link1="https://www.solucionesenedu.com"
-            image2="/assets/omegab.png"
-            link2="https://omegaup.com/"
+            image2="/assets/hp.png"
+            link2="https://www.hp.com/mx-es/home.html"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA'
             ]}
             staff={['1 ACCESOS PARA STAFF']}
           />
-        </BoardCard>
+        </BoardCard> */}
       </MainBoard>
       <Footer />
     </Box>

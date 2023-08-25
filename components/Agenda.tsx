@@ -12,12 +12,9 @@ import YouTubeIcon from '@mui/icons-material/YouTube'
 const titles = [
   'Inicio (Local)',
   'Fin (Local)',
-  'Inicio (UTC)',
-  'Fin (UTC)',
   'Actividad',
   'Lugar',
-  'Asistentes',
-  'Patrocinado por'
+  'Asistentes'
 ]
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -42,9 +39,6 @@ export interface RowData {
   r3: string
   r4: string
   r5: string
-  r6: string
-  r7: string
-  r8: string
 }
 
 export interface Props {
@@ -82,19 +76,6 @@ export const AgendaTable: React.FC<Props> = ({ Rows }) => {
                 </StyledTableCell>
                 <StyledTableCell align="center">
                   <Typography variant="body2">{row.r5}</Typography>
-                </StyledTableCell>
-                <StyledTableCell align="center">
-                  <Typography variant="body2">{row.r6}</Typography>
-                  {(row.r6 === 'Auditorio M, ITESO' ||
-                    row.r6 === 'Auditorio M') && (
-                    <YouTubeIcon style={{ color: 'red' }} />
-                  )}
-                </StyledTableCell>
-                <StyledTableCell align="center">
-                  <Typography variant="body2">{row.r7}</Typography>
-                </StyledTableCell>
-                <StyledTableCell align="center">
-                  <Typography variant="body2">{row.r8}</Typography>
                 </StyledTableCell>
               </StyledTableRow>
             ))}

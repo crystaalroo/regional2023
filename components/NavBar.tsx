@@ -109,7 +109,7 @@ const NavBar: React.FC = () => {
                         align="left"
                         color={'white'}
                       >
-                        REGIONAL ICPC MEXICO 2022
+                        REGIONAL ICPC MEXICO 2023
                       </Typography>
                     </CardContent>
                     <Box
@@ -216,7 +216,7 @@ const NavBar: React.FC = () => {
                 ))}
                 <ExternalLink
                   key="Sede"
-                  href="https://iteso.mx/"
+                  href="https://tec.mx/es/guadalajara"
                   target={'blank'}
                 >
                   <MenuItem key="Sede" onClick={handleCloseNavMenu}>
@@ -254,7 +254,7 @@ const NavBar: React.FC = () => {
               ))}
               <ExternalLink
                 key="Sede"
-                href="https://iteso.mx/"
+                href="https://tec.mx/es/guadalajara"
                 target={'blank'}
               >
                 <Button

@@ -8,43 +8,43 @@ import Link from 'next/link'
 
 const imagesE = [
   {
-    url: '/assets/mapaiteso.jpg',
-    title: 'Mapa ITESO',
-    link: 'https://www.iteso.mx/documents/2624322/0/Mapa+del+campus'
-  },
-  {
-    url: '/assets/event2.JPG',
-    title: 'Fotos del evento',
-    link: 'https://www.flickr.com/photos/tcmxicpc/albums'
+    url: '/assets/mapa_tec.png',
+    title: 'Mapa Tec de Monterrey',
+    link: '/assets/mapa_tec.png'
   }
+  // {
+  //   url: '/assets/event2.JPG',
+  //   title: 'Fotos del evento',
+  //   link: 'https://www.flickr.com/photos/tcmxicpc/albums'
+  // }
 ]
 
 const imagesI = [
   {
-    url: '/assets/agendaicpc.jpg',
+    url: '/assets/elda.jpg',
     title: 'Agenda',
     link: '/agenda'
   },
   {
-    url: '/assets/holiday_inn_express_guadalajara_iteso.jpg',
+    url: '/assets/riu.jpg',
     title: 'Hospedaje',
     link: '/hotel'
   },
   {
-    url: '/assets/mapaiteso.jpg',
+    url: '/assets/sponsors.jpg',
     title: 'Patrocinadores',
     link: '/sponsors'
   },
   {
-    url: '/assets/girls.jpg',
+    url: '/assets/pagos.jpg',
     title: 'Pagos',
     link: '/payment'
-  },
-  {
-    url: '/assets/contest.jpg',
-    title: 'Participantes',
-    link: '/participants'
   }
+  // {
+  //   url: '/assets/winners.jpg',
+  //   title: 'Participantes',
+  //   link: '/participants'
+  // }
 ]
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({

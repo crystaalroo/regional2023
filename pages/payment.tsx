@@ -55,8 +55,8 @@ const Payment: NextPage = () => {
         </BoardCard>
         <BoardCard barSide="left">
           <Typography color={'text.secondary'} sx={{ width: '100%' }}>
-            La participación en el Concurso Regional 2022 del ICPC en México, a
-            celebrarse el 18 de marzo de 2023, tendrá costo. El costo de
+            La participación en el Concurso Regional 2023 del ICPC en México, a
+            celebrarse el 21 de octubre de 2023, tendrá costo. El costo de
             participación se ha establecido de forma INDIVIDUAL, en dependencia
             del rol que tenga cada participante en el concurso. Los roles y
             costos asociados son los siguientes:
@@ -73,7 +73,7 @@ const Payment: NextPage = () => {
         >
           <PaymentTable />
         </BoardCard>
-        <BoardCard barSide="right" sx={{ padding: 0 }}>
+        {/* <BoardCard barSide="right" sx={{ padding: 0 }}>
           <Typography color={'text.secondary'} sx={{ width: '100%' }}>
             Dado que el ITESO es una Donataria Autorizada, los ingresos
             registrados no generan IVA y, por tanto, la factura generada no
@@ -340,8 +340,8 @@ const Payment: NextPage = () => {
               </ExternalLink>
               )
             </Item>
-          </List>
-        </BoardCard>
+          </List> 
+        </BoardCard> */}
       </MainBoard>
       <Footer />
     </Box>

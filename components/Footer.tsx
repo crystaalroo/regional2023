@@ -41,15 +41,19 @@ const Footer: React.FC = () => {
             alt="icpcmx"
           />
         </Link>
-        <ExternalLink key="Sede" href="https://iteso.mx/" target={'blank'}>
+        <ExternalLink
+          key="Sede"
+          href="https://tec.mx/es/guadalajara"
+          target={'blank'}
+        >
           <Box
             component="img"
             sx={{
-              width: '180pt',
+              width: '110pt',
               objectFit: 'cover',
               padding: { sm: '0 50px 0 0', xs: '25px 0' }
             }}
-            src="/assets/itesologo.png"
+            src="/assets/tecblanco.png"
             alt="iteso"
           />
         </ExternalLink>
