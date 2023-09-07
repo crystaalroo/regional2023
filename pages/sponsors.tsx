@@ -41,9 +41,7 @@ const Sponsor: NextPage = () => {
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
-              'PRESENCIA DURANTE EL CONCURSO, BRINDIS, CENA Y PASEO',
-              'PLAYERA OFICIAL DEL EVENTO',
-              'MENCION COMO PATROCINADOR DEL BRINDIS Y DE LA CENA, CON POSIBILIDAD DE COMPARTIR UN MENSAJE EN ESTAS ACTIVIDADES'
+              'PLAYERA OFICIAL DEL EVENTO'
             ]}
             staff={['5 ACCESOS PARA STAFF', '2 ACCESOS PARA EJECUTIVOS']}
             image1="assets/huaweid.png"
@@ -52,21 +50,20 @@ const Sponsor: NextPage = () => {
             link2="https://www.jetbrains.com/"
           />
         </BoardCard>
-        {/* <BoardCard barSide="none">
+        <BoardCard barSide="none">
           <Diamond
             name="Oro"
-            per="80%"
+            per="75%"
             benefits={[
               'PRESENCIA EN SITIO WEB Y MENCIÓN EN SOCIAL MEDIA',
               'DERECHO A INCLUIR ARTÍCULOS PROMOCIONALES EN KIT DE BIENVENIDA',
-              'PRESENCIA DURANTE EL CONCURSO, BRINDIS, CENA Y PASEO',
               'PLAYERA OFICIAL DEL EVENTO'
             ]}
             staff={['2 ACCESOS PARA STAFF', '1 ACCESOS PARA EJECUTIVOS']}
             image="/assets/cignuz.png"
             link="https://cignuz.com/"
           />
-        </BoardCard> */}
+        </BoardCard>
         {/* <BoardCard barSide="none">
           <Bronce
             name="Plata"

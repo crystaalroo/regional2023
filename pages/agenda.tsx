@@ -13,10 +13,11 @@ import path from 'path'
 // ********************************************************************************
 
 interface Props {
+  agenda14: RowData[]
   agenda17: RowData[]
   agenda18: RowData[]
 }
-const Agenda: NextPage<Props> = ({ agenda17, agenda18 }) => {
+const Agenda: NextPage<Props> = ({ agenda14, agenda17, agenda18 }) => {
   return (
     <Box position={'relative'} sx={{ bgcolor: 'background.default' }}>
       <TopBanner />
@@ -24,6 +25,27 @@ const Agenda: NextPage<Props> = ({ agenda17, agenda18 }) => {
       <MainBoard
         sx={{ padding: { md: '100px 50px 0 50px', xs: '80px 0 0 0' } }}
       >
+        <BoardCard barSide="none" sx={{ padding: 0 }}>
+          <Typography
+            variant="h4"
+            component="div"
+            align="center"
+            color={'primary.contrastText'}
+          >
+            Sabado: 14 de Octubre de 2023
+          </Typography>
+        </BoardCard>
+        <BoardCard
+          barSide="none"
+          sx={{
+            width: '100%',
+            overflow: 'scroll',
+            alignItems: 'normal',
+            justifyContent: 'normal'
+          }}
+        >
+          <AgendaTable Rows={agenda14} />
+        </BoardCard>
         <BoardCard barSide="none" sx={{ padding: 0 }}>
           <Typography
             variant="h4"
@@ -97,8 +119,17 @@ async function parseCSV(fileName: string): Promise<RowData[]> {
   })
 }
 export const getStaticProps: GetStaticProps<Props> = async () => {
+  let rows14: RowData[] = []
   let rows17: RowData[] = []
   let rows18: RowData[] = []
+  await parseCSV('./public/agenda14.csv')
+    .then((parsedRows: RowData[]) => {
+      rows14 = parsedRows
+      // console.log(rows17)
+    })
+    .catch((error: Error) => {
+      console.error(error)
+    })
   await parseCSV('./public/agenda17.csv')
     .then((parsedRows: RowData[]) => {
       rows17 = parsedRows
@@ -115,7 +146,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     .catch((error: Error) => {
       console.error(error)
     })
-  return { props: { agenda17: rows17, agenda18: rows18 } }
+  return { props: { agenda14: rows14, agenda17: rows17, agenda18: rows18 } }
 }
 
 export default Agenda

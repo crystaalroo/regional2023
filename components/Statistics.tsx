@@ -39,6 +39,11 @@ const imagesI = [
     url: '/assets/pagos.jpg',
     title: 'Pagos',
     link: '/payment'
+  },
+  {
+    url: '/assets/masters.jpg',
+    title: 'ICPC MASTERS',
+    link: '/masters'
   }
   // {
   //   url: '/assets/winners.jpg',

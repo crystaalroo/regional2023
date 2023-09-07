@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
           width: '100%'
         }}
       >
-        ACERCA DEL REGIONAL ICPC MEXICO 2022
+        ACERCA DEL REGIONAL ICPC MEXICO 2023
       </Typography>
       <Box
         sx={{

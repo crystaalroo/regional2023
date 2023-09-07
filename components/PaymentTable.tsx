@@ -11,7 +11,7 @@ import { Box, Typography } from '@mui/material'
 const titles = [
   'Rol',
   'Pago temprano (Hasta el 22 de septiembre)',
-  'Pago tardío (Hasta el 21 de febrero)'
+  'Pago tardío (Hasta el 5 de octubre)'
 ]
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -39,7 +39,7 @@ function createData(
 }
 
 const rows = [
-  createData('Composición Oficial Concursantes (c/u)', '1000 MXN', '12000 MXN'),
+  createData('Composición Oficial Concursantes (c/u)', '1000 MXN', '1200 MXN'),
   createData('Composición Oficial Entrenador', '1100 MXN', '1300 MXN'),
   createData(
     'Integrantes Adicionales,Co Entrenador, Reservas y otros asistentes',

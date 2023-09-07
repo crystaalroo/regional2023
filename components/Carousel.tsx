@@ -18,7 +18,7 @@ const images = [
   },
   {
     label: 'REUNIDOS EN UNA SEDE',
-    imgPath: '/assets/tecsite.jpg'
+    imgPath: '/assets/oracle.jpg'
   },
   {
     label: 'CONOCE GUADALAJARA',
